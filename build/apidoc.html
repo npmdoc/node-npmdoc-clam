@@ -1,0 +1,2752 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >clam (v1.0.12)</a>
+</h1>
+<h4>A full Web front end develop envirment.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam">module clam</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.build">
+            function <span class="apidocSignatureSpan">clam.</span>build
+            <span class="apidocSignatureSpan">(timestamp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle">
+            function <span class="apidocSignatureSpan">clam.</span>dataApiHandle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.init">
+            function <span class="apidocSignatureSpan">clam.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.on">
+            function <span class="apidocSignatureSpan">clam.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.project">
+            function <span class="apidocSignatureSpan">clam.</span>project
+            <span class="apidocSignatureSpan">(prj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>assetUrl</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>assetsTool</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>hosts</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>jsonHandle</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>mocker</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>mod</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>page</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>proxy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>selectfile</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>template</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>widget</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.assetUrl">module clam.assetUrl</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.assetUrl.toAbsolutePath">
+            function <span class="apidocSignatureSpan">clam.assetUrl.</span>toAbsolutePath
+            <span class="apidocSignatureSpan">(pageContent, urlDir)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.assetsTool">module clam.assetsTool</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.assetsTool.clearCacheMod">
+            function <span class="apidocSignatureSpan">clam.assetsTool.</span>clearCacheMod
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.assetsTool.feLoader">
+            function <span class="apidocSignatureSpan">clam.assetsTool.</span>feLoader
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.config">module clam.config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.config.get">
+            function <span class="apidocSignatureSpan">clam.config.</span>get
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.config.init">
+            function <span class="apidocSignatureSpan">clam.config.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.config.on">
+            function <span class="apidocSignatureSpan">clam.config.</span>on
+            <span class="apidocSignatureSpan">(evtName, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.config.root">
+            function <span class="apidocSignatureSpan">clam.config.</span>root
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.config.set">
+            function <span class="apidocSignatureSpan">clam.config.</span>set
+            <span class="apidocSignatureSpan">(key, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.dataApiHandle">module clam.dataApiHandle</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.dataApiHandle">
+            function <span class="apidocSignatureSpan">clam.</span>dataApiHandle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle._local">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>_local
+            <span class="apidocSignatureSpan">(req, res, next, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle._remote">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>_remote
+            <span class="apidocSignatureSpan">(req, res, next, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.handle">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>handle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.httpProxy">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>httpProxy
+            <span class="apidocSignatureSpan">(req, res, next, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.httpsProxy">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>httpsProxy
+            <span class="apidocSignatureSpan">(req, res, next, info)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.proxy">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>proxy
+            <span class="apidocSignatureSpan">(req, res, next, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.dataApiHandle.socketProxy">
+            function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>socketProxy
+            <span class="apidocSignatureSpan">(req, res, next, info)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.dataApiHandle.</span>_reFullURI</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.dataApiHandle.</span>remotes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">clam.dataApiHandle.</span>charset</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.hosts">module clam.hosts</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.hosts.restore">
+            function <span class="apidocSignatureSpan">clam.hosts.</span>restore
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.hosts.setHosts">
+            function <span class="apidocSignatureSpan">clam.hosts.</span>setHosts
+            <span class="apidocSignatureSpan">(pro_hosts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.jsonHandle">module clam.jsonHandle</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.jsonHandle.json">
+            function <span class="apidocSignatureSpan">clam.jsonHandle.</span>json
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.mocker">module clam.mocker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.mocker.getMixedMockDate">
+            function <span class="apidocSignatureSpan">clam.mocker.</span>getMixedMockDate
+            <span class="apidocSignatureSpan">(param, url, isRootPage)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.mod">module clam.mod</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.mod.add">
+            function <span class="apidocSignatureSpan">clam.mod.</span>add
+            <span class="apidocSignatureSpan">(modName, description, template)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.mod.addCore">
+            function <span class="apidocSignatureSpan">clam.mod.</span>addCore
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.mod.del">
+            function <span class="apidocSignatureSpan">clam.mod.</span>del
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.mod.list">
+            function <span class="apidocSignatureSpan">clam.mod.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.page">module clam.page</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.page.add">
+            function <span class="apidocSignatureSpan">clam.page.</span>add
+            <span class="apidocSignatureSpan">(name, url, description, template)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.page.del">
+            function <span class="apidocSignatureSpan">clam.page.</span>del
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.page.list">
+            function <span class="apidocSignatureSpan">clam.page.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.page.update">
+            function <span class="apidocSignatureSpan">clam.page.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.project">module clam.project</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.project.project">
+            function <span class="apidocSignatureSpan">clam.</span>project
+            <span class="apidocSignatureSpan">(prj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.project.setUrls">
+            function <span class="apidocSignatureSpan">clam.project.</span>setUrls
+            <span class="apidocSignatureSpan">(urls)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.proxy">module clam.proxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.proxy.fetch">
+            function <span class="apidocSignatureSpan">clam.proxy.</span>fetch
+            <span class="apidocSignatureSpan">(url, host, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.selectfile">module clam.selectfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.selectfile.getTree">
+            function <span class="apidocSignatureSpan">clam.selectfile.</span>getTree
+            <span class="apidocSignatureSpan">(root)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.template">module clam.template</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.template.convert">
+            function <span class="apidocSignatureSpan">clam.template.</span>convert
+            <span class="apidocSignatureSpan">(src, dest, param, destName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.template.init">
+            function <span class="apidocSignatureSpan">clam.template.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.widget">module clam.widget</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.widget.add">
+            function <span class="apidocSignatureSpan">clam.widget.</span>add
+            <span class="apidocSignatureSpan">(widgetName, description, template)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.widget.del">
+            function <span class="apidocSignatureSpan">clam.widget.</span>del
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.widget.list">
+            function <span class="apidocSignatureSpan">clam.widget.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam" id="apidoc.module.clam">module clam</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.build" id="apidoc.element.clam.build">
+        function <span class="apidocSignatureSpan">clam.</span>build
+        <span class="apidocSignatureSpan">(timestamp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">build = function (timestamp){
+    var build = require(&#x27;./lib/build.js&#x27;);
+    build.build(&#x27;server&#x27;, timestamp);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            return;
+        }
+        var startServer = require(&#x27;./lib/server.js&#x27;);
+        startServer(false);
+    },
+    build: function(timestamp){
+        var build = require(&#x27;./lib/build.js&#x27;);
+        build.<span class="apidocCodeKeywordSpan">build</span>(&#x27;server&#x27;, timestamp);
+    }
+}
+// clam.on();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle" id="apidoc.element.clam.dataApiHandle">
+        function <span class="apidocSignatureSpan">clam.</span>dataApiHandle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dataApiHandle = function () {
+    return function (req, res, next) {
+        var remotes = exports.remotes;
+        // no interfaces defined
+        if (!remotes || !remotes.length) {
+            next();
+            return;
+        }
+        var url = uri.parse(req.url);
+        _.some(remotes, function (options) {
+            // equals or matched the option pathname
+            if (options.pathname === url.pathname || url.pathname.match(options.pathname)) {
+                exports.proxy(req, res, next, options);
+                return true;
+            }
+        }) || next();
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.init" id="apidoc.element.clam.init">
+        function <span class="apidocSignatureSpan">clam.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function (){
+    config.init();
+    template.init();
+    var ret = project({});
+
+    ret.data.forEach(function (ac) {
+        debug(ac.action, ac.content);
+    });
+    process.exit(0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var template = require(&#x27;./lib/template.js&#x27;);
+var mod = require(&#x27;./lib/mod.js&#x27;);
+var page = require(&#x27;./lib/page.js&#x27;);
+var widget = require(&#x27;./lib/widget.js&#x27;);
+
+var clam = module.exports = {
+    init: function(){
+config.<span class="apidocCodeKeywordSpan">init</span>();
+template.init();
+var ret = project({});
+
+ret.data.forEach(function (ac) {
+    debug(ac.action, ac.content);
+});
+process.exit(0);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.on" id="apidoc.element.clam.on">
+        function <span class="apidocSignatureSpan">clam.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function (){
+    var prjInfo = config.get(&#x27;project&#x27;);
+    if (!prjInfo) {
+        console.log(&#x27;Execute &#x22;clam init&#x22;.&#x27;);
+        return;
+    }
+    var startServer = require(&#x27;./lib/server.js&#x27;);
+    startServer(false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        startServer(false);
+    },
+    build: function(timestamp){
+        var build = require(&#x27;./lib/build.js&#x27;);
+        build.build(&#x27;server&#x27;, timestamp);
+    }
+}
+// clam.<span class="apidocCodeKeywordSpan">on</span>();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.project" id="apidoc.element.clam.project">
+        function <span class="apidocSignatureSpan">clam.</span>project
+        <span class="apidocSignatureSpan">(prj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">project = function (prj) {
+  prjDir = config.root();
+  debug(&#x27;项目目录:%s&#x27;, prjDir);
+  var state = prjState(prjDir);
+  debug(&#x27;项目状态:%s&#x27;, state);
+  if (!prj) {
+    var info = getProject(prjDir, state);
+    return info;
+  }
+
+  var actions = [];
+  if (state !== &#x27;normal&#x27;) {
+    if (state === &#x27;blank&#x27;) {
+      var pagesFullDir = path.join(prjDir, initConf.pagesDir);
+      mkdirp.sync(pagesFullDir);
+      actions.push({action: &#x27;创建页面目录&#x27;, content: pagesFullDir});
+
+      var modsFullDir = path.join(prjDir, initConf.modsDir);
+      mkdirp.sync(modsFullDir);
+      actions.push({action: &#x27;创建模块目录&#x27;, content: modsFullDir});
+
+      var widgetsFullDir = path.join(prjDir, initConf.widgetsDir)
+      mkdirp.sync(widgetsFullDir);
+      actions.push({action: &#x27;创建组件目录&#x27;, content: widgetsFullDir});
+
+      var buildFullDir = path.join(prjDir, initConf.buildDir);
+      mkdirp.sync(buildFullDir);
+      actions.push({action: &#x27;创建构建目录&#x27;, content: buildFullDir});
+
+      var testsFullDir = path.join(prjDir, initConf.testsDir);
+      mkdirp.sync(testsFullDir);
+      actions.push({action: &#x27;创建测试目录&#x27;, content: testsFullDir});
+    }
+    prj = initConf;
+    var dirs = prjDir.split(path.sep);
+    prj.name = dirs[dirs.length - 1];
+  }
+
+
+  var oldPrj = config.get(&#x27;project&#x27;) || prj;
+  if (oldPrj.hosts &#x26;&#x26; prj.hosts &#x26;&#x26; oldPrj.hosts !== prj.hosts) {
+    hostSwitch.setHosts(prj.hosts);
+    actions.push({action: &#x27;更新hosts文件&#x27;, content: &#x27;操作系统hosts文件&#x27;});
+  }
+  for (var k in prj) {
+    oldPrj[k] = prj[k];
+  }
+
+  config.set(&#x27;project&#x27;, oldPrj);
+  actions.push({action: &#x27;更新项目元文件&#x27;, content: &#x27;.clam/project.json&#x27;});
+
+  //getMuiConfig();
+  //actions.push({action: &#x27;更新项目gconfig文件&#x27;, content: &#x27;.clam/gconfig.json&#x27;});
+
+  return {
+    succeed: true,
+    msg: &#x27;更新项目信息&#x27;,
+    data: actions
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.assetUrl" id="apidoc.module.clam.assetUrl">module clam.assetUrl</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.assetUrl.toAbsolutePath" id="apidoc.element.clam.assetUrl.toAbsolutePath">
+        function <span class="apidocSignatureSpan">clam.assetUrl.</span>toAbsolutePath
+        <span class="apidocSignatureSpan">(pageContent, urlDir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toAbsolutePath(pageContent, urlDir) {
+    var cdnPath = config.get(&#x27;project&#x27;).cdnPath;
+
+    //处理模块中资源引用
+    var localHosts = localhosts();
+    debug(&#x27;本地host列表[%s]&#x27;, localHosts);
+
+<span class="apidocCodeCommentSpan">    /*/抽取cdn域名
+    var cdnHost = cdnPath.match(cdnPathReg);
+    if (cdnHost) {
+        cdnHost = cdnHost[0];
+    }
+    else {
+        cdnHost = &#x27;&#x27;;
+    }*/
+</span>
+    //以http开头的就改变cndPath中的端口号
+    var port = config.get(&#x27;project&#x27;).port;
+    var cdnPathWithPort = cdnPath;
+    if (cdnPath.indexOf(&#x27;http&#x27;) === 0) {
+        //如果是预览服务器运行在80端口，就不更改
+        if (!port || port == 80) {
+            port = &#x27;&#x27;;
+        }
+        else {
+            port = &#x27;:&#x27; + port;
+        }
+        var matchResult = cdnPath.match(/(http:\/\/[\w\.]+?)(\/.*)/);
+        if (matchResult) {
+            cdnPathWithPort = matchResult[1] + port + matchResult[2];
+        }
+    }
+
+    var resourceRootDir = &#x27;&#x27;;
+    debug(&#x27;资源跟路径%s&#x27;, resourceRootDir);
+    //debug(&#x27;处理前内容%s&#x27;, pageContent);
+    //处理带域名的链接。1、增加端口号。2、增加时间戳路径
+    localHosts.forEach(function(localHost){
+        localHost = localHost.replace(/\./g, &#x27;\\.&#x27;);
+        var scriptWithDomain = new RegExp(&#x27;&#x3c;script[^&#x3e;]*? src=[\&#x27;&#x22;](?:http[s]?:\\/\\/)(&#x27; + localHost + &#x27;)(.*)[\&#x27;&#x22;][^&#x3e;]*?&#x3e;&#x27;, &#x27;g&#x27;);
+        pageContent = pageContent.replace(scriptWithDomain, function ($1, $2) {
+            return $1.replace($2, $2 + port);
+        });
+    });
+
+    localHosts.forEach(function(localHost){
+        localHost = localHost.replace(/\./g, &#x27;\\.&#x27;);
+        var styleWithDomain = new RegExp(&#x27;&#x3c;link[^&#x3e;]*? href=[\&#x27;&#x22;](?:http[s]?:\\/\\/)(&#x27; + localHost + &#x27;)(.*)[\&#x27;&#x22;][^&#x3e;]*?&#x3e;&#x27;, &#x27;g&#x27;);
+        pageContent = pageContent.replace(styleWithDomain, function ($1, $2) {
+            return $1.replace($2, $2 + port);
+        });
+    });
+    //替换资源相对路径应为带域名和端口号的绝对路径，根据当前页面所在相对路径转换
+    pageContent = pageContent.replace(scriptReg, function ($1, $2, $3) {
+        if ($3.match(/^\$\{/)) {
+            return $1;
+        }
+        else {
+            var replacedPath = join(resourceRootDir, urlDir, $3).replace(/\\/ig, &#x27;/&#x27;);
+            if ($1.match(/clam-moveto/) &#x26;&#x26; !$1.match(/clam-moveto\s{0,}=\s{0,}[&#x22;&#x27;]\s{0,}head\s{0,}[&#x22;&#x27;]/) &#x26;&#x26; !$1.match(/clam-moveto\s{0,}=\s{0,}[&#x22;&#x27;]\s{0,}tail\s{0,}[&#x22;&#x27;]/)) {
+                replacedPath = &#x22;$CLAM_VER$/&#x22;+replacedPath;
+            }
+            return $1.replace($3, cdnPathWithPort + &#x27;/&#x27; + replacedPath).replace(/[&#x22;&#x27;](\s{0,})([^&#x22;&#x27;]*?)(\s{0,})[&#x22;&#x27;]/g, function($
+1,$2,$3) {
+                return &#x27;&#x22;&#x27;+$3+&#x27;&#x22;&#x27;;
+            });
+        }
+    });
+    pageContent = pageContent.replace(styleReg, function ($1, $2, $3) {
+        if ($3.match(/^\$\{/)) {
+            return $1;
+        }
+        else {
+            var replacedPath = join(resourceRootDir, urlDir, $3).replace(/\\/ig, &#x27;/&#x27;);
+            if ($1.match(/clam-moveto/) &#x26;&#x26; !$1.match(/clam-moveto\s{0,}=\s{0,}[&#x22;&#x27;]\s{0,}head\s{0,}[&#x22;&#x27;]/) &#x26;&#x26; !$1.match(/clam-moveto\s{0,}=\s{0,}[&#x22;&#x27;]\s{0,}tail\s{0,}[&#x22;&#x27;]/)) {
+                console.log(replacedPath)
+                replacedPath = &#x22;$CLAM_VER$/&#x22;+replacedPath;
+            }
+            return $1.replace($3, cdnPathWithPort + &#x27;/&#x27; + replacedPath).replace(/[&#x22;&#x27;](\s{0,})([^&#x22;&#x27;]*?)(\s{0,})[&#x22;&#x27;]/g, function($
+1,$2,$3) {
+                return &#x27;&#x22;&#x27;+$3+&#x27;&#x22;&#x27;;
+            });
+        }
+    });
+
+    //处理绝对路径引用。直接增加域名和端口号
+    pageContent = pageContent.replace(absScript, function ($1, $2) {
+        return $1.replace($2, cdnPathWithPort + $2);
+    });
+    pageContent = pageContent.replace(absStyle, function ($1, $2) {
+        return $1.replace($2, cdnPathWithPort + $2);
+    });
+    //debug(&#x27;处理后内容%s&#x27;, pageContent);
+    return pageContent;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.assetsTool" id="apidoc.module.clam.assetsTool">module clam.assetsTool</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.assetsTool.clearCacheMod" id="apidoc.element.clam.assetsTool.clearCacheMod">
+        function <span class="apidocSignatureSpan">clam.assetsTool.</span>clearCacheMod
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearCacheMod = function () {
+    hasLoadMod = {};   // 页面刷新时需要清楚记录的模块
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.assetsTool.feLoader" id="apidoc.element.clam.assetsTool.feLoader">
+        function <span class="apidocSignatureSpan">clam.assetsTool.</span>feLoader
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function feLoader(data) {
+    var cmd = [];
+    data.forEach(function(i){
+        cmd.push(&#x27;{express:&#x27; + i[&#x27;express&#x27;] + &#x27;, id:&#x22;&#x27;+ i[&#x27;id&#x27;] + &#x27;&#x22;}&#x27;);
+    })
+
+    cmd = &#x27;var data = [&#x27; + cmd.join(&#x27;,&#x27;) + &#x27;], ret = [];&#x27;
+        + &#x27;for (var i = 0, str; i &#x3c; data.length; i++) {&#x27;
+        + &#x27;    str = data[i][&#x22;express&#x22;];&#x27;
+        + &#x27;    if (str) {&#x27;
+        + &#x27;        ret.push({&#x27;
+        + &#x27;            express: str,&#x27;
+        + &#x27;            id: data[i][&#x22;id&#x22;]&#x27;
+        + &#x27;        });&#x27;
+        + &#x27;    }&#x27;
+        + &#x27;}&#x27;
+        + &#x27;return ret;&#x27;;
+
+    var fn = new Function(&#x27;$assetsTool&#x27;, cmd);
+    return fn(new AssetsTool());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.config" id="apidoc.module.clam.config">module clam.config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.config.get" id="apidoc.element.clam.config.get">
+        function <span class="apidocSignatureSpan">clam.config.</span>get
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function get(key){
+    if(!PRJROOT){
+        init();
+    }
+    return CONFIG[key];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    ret.data.forEach(function (ac) {
+        debug(ac.action, ac.content);
+    });
+    process.exit(0);
+},
+on: function(){
+    var prjInfo = config.<span class="apidocCodeKeywordSpan">get</span>(&#x27;project&#x27;);
+    if (!prjInfo) {
+        console.log(&#x27;Execute &#x22;clam init&#x22;.&#x27;);
+        return;
+    }
+    var startServer = require(&#x27;./lib/server.js&#x27;);
+    startServer(false);
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.config.init" id="apidoc.element.clam.config.init">
+        function <span class="apidocSignatureSpan">clam.config.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function init() {
+
+    //只初始化一次
+    if (PRJROOT) {
+        return;
+    }
+
+    //命令行传入的目录参数在不同调用方式下下标不同，处理相对路径为绝对路径
+    var argvs = process.argv;
+    var dir = process.cwd();
+
+    //从获取命令行--root参数
+    for (var i = 0; i &#x3c; argvs.length; i++) {
+        if (argvs[i] === &#x27;--root&#x27; || argvs[i] === &#x27;-r&#x27;) {
+            if (i + 1 &#x3c; argvs.length) {
+                dir = argvs[i + 1];
+            }
+        }
+    }
+    dir = path.resolve(dir);
+    var metaDir = path.join(dir, META.dir);
+
+    //兼容windows和Linux路径
+    while (!fs.existsSync(metaDir) &#x26;&#x26; metaDir !== &#x27;/&#x27; + META.dir &#x26;&#x26; !metaDir.match(/\w{1,1}:\\.clam/)) {
+        metaDir = path.join(metaDir, &#x27;../..&#x27;, META.dir);
+    }
+    PRJROOT = path.join(metaDir, &#x27;..&#x27;);
+    if (PRJROOT === &#x27;/&#x27; || PRJROOT.match(/\w{1,1}:\\$/)) {
+        PRJROOT = dir;
+    }
+
+    var metaDir = path.join(PRJROOT, META.dir);
+    if(!fs.existsSync(metaDir)){
+        return;
+    }
+    var files = fs.readdirSync(metaDir);
+    debug(&#x27;%s目录，文件列表%s&#x27;, metaDir, util.inspect(files));
+
+    files.forEach(function (file, i) {
+        if (/.+\.json$/.test(file)) {
+            readFromFile(file);
+            createWatch(file, metaDir);
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var template = require(&#x27;./lib/template.js&#x27;);
+var mod = require(&#x27;./lib/mod.js&#x27;);
+var page = require(&#x27;./lib/page.js&#x27;);
+var widget = require(&#x27;./lib/widget.js&#x27;);
+
+var clam = module.exports = {
+    init: function(){
+config.<span class="apidocCodeKeywordSpan">init</span>();
+template.init();
+var ret = project({});
+
+ret.data.forEach(function (ac) {
+    debug(ac.action, ac.content);
+});
+process.exit(0);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.config.on" id="apidoc.element.clam.config.on">
+        function <span class="apidocSignatureSpan">clam.config.</span>on
+        <span class="apidocSignatureSpan">(evtName, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function on(evtName, fn){
+    return EVENT.on(evtName, fn);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        startServer(false);
+    },
+    build: function(timestamp){
+        var build = require(&#x27;./lib/build.js&#x27;);
+        build.build(&#x27;server&#x27;, timestamp);
+    }
+}
+// clam.<span class="apidocCodeKeywordSpan">on</span>();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.config.root" id="apidoc.element.clam.config.root">
+        function <span class="apidocSignatureSpan">clam.config.</span>root
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function root(){
+    if(!PRJROOT){
+        init();
+    }
+    return PRJROOT;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// [&#x22;socket://www.taobao.com:80/a/d/b?a=1&#x26;b=2&#x22;, &#x22;socket&#x22;, &#x22;www.taobao.com&#x22;, &#x22;80&#x22;, &#
+x22;/a/d/b&#x22;, &#x22;a=1&#x26;b=2&#x22;]
+// &#x27;socket://www.taobao.com:80/a/d/b?a=1&#x26;b=2&#x27;.match(/^(?:(http(?:s*)|socket):\/\/)*([^\:\/]+)*(?:\:(\d+))*(\/[^?]*)(?:\?(.*))*$/)
+exports._reFullURI = /^(?:(http(?:s*)|socket):\/\/)*([^\:\/]+)*(?:\:(\d+))*(\/[^?]*)(?:\?(.*))*$/;
+
+if (prjInfo &#x26;&#x26; prjInfo.dataApi) {
+_.each(prjInfo.dataApi, function (options) {
+  // 接口文件放到
+  var local = path.join(config.<span class="apidocCodeKeywordSpan">root</span>(), &#x27;/.clam/dataApi/&#x27;, options.local || &#
+x27;&#x27;);
+  var remote = (options.remote || &#x27;&#x27;).match(exports._reFullURI);
+  var type = options.type || &#x27;auto&#x27;;
+  var pathname = options.url;
+  if (!pathname || !remote) {
+    debug(&#x27;Failed to build remote %s from %s !&#x27;, remote, local);
+  }
+  exports.remotes.push({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.config.set" id="apidoc.element.clam.config.set">
+        function <span class="apidocSignatureSpan">clam.config.</span>set
+        <span class="apidocSignatureSpan">(key, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function set(key, config){
+    if(!PRJROOT){
+        init();
+    }
+    var metaDir = path.join(PRJROOT, META.dir);
+    debug(&#x27;目录:%s&#x27;, metaDir);
+    var metaFileName = path.join(metaDir, key+&#x27;.json&#x27;);
+    CONFIG[key] = config;
+    if(!fs.existsSync(metaDir)){
+        mkdirp.sync(metaDir);
+    }
+    var configStr = JSON.stringify(config);
+    configStr = beautify(configStr);
+
+    if(!fs.existsSync(metaFileName)){
+        debug(&#x22;创建配置文件 %s&#x22;,metaFileName);
+        fs.writeFileSync(metaFileName, configStr);
+        createWatch(key+&#x27;.json&#x27;, metaDir);
+        return;
+    }
+
+    fs.writeFileSync(metaFileName, configStr);
+    return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                line_disable(_name);
+            });
+            lines.push(ip + &#x27; &#x27; + item.join(&#x27; &#x27;) + split_char);
+        }
+    });
+    lines.push(endTag + split_char);
+
+    hostFile.<span class="apidocCodeKeywordSpan">set</span>(lines.join(&#x27;&#x27;));
+};
+
+/**
+ * 恢复HOST并存储
+ */
+var restore = function () {
+    var host = hostFile.get();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.dataApiHandle" id="apidoc.module.clam.dataApiHandle">module clam.dataApiHandle</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.dataApiHandle" id="apidoc.element.clam.dataApiHandle.dataApiHandle">
+        function <span class="apidocSignatureSpan">clam.</span>dataApiHandle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dataApiHandle = function () {
+    return function (req, res, next) {
+        var remotes = exports.remotes;
+        // no interfaces defined
+        if (!remotes || !remotes.length) {
+            next();
+            return;
+        }
+        var url = uri.parse(req.url);
+        _.some(remotes, function (options) {
+            // equals or matched the option pathname
+            if (options.pathname === url.pathname || url.pathname.match(options.pathname)) {
+                exports.proxy(req, res, next, options);
+                return true;
+            }
+        }) || next();
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle._local" id="apidoc.element.clam.dataApiHandle._local">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>_local
+        <span class="apidocSignatureSpan">(req, res, next, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_local = function (req, res, next, options) {
+    fs.stat(options.local, function (err, stats) {
+        if (!err &#x26;&#x26; stats.isFile()) {
+            var action = require(options.local);
+            if (&#x27;function&#x27; === typeof action.handle) {
+                action.handle(req, res, next, options);
+                return;
+            }
+            try {
+                // 反回的数据不是模块，就认为是json了。只允许两种。推荐直接返回json。
+                // 如果会nodejs。直接操作数据。方便。快捷
+                res.setHeader(&#x27;Content-Type&#x27;, &#x27;application/json;text/json; charset=&#x27; + exports.charset);
+                res.write(JSON.stringify(action));
+                res.end();
+            } catch ( e ) {
+                debug(&#x27;Stringify failed! Data: %o \n\r File: %s&#x27;, action, options.local);
+                res.end(JSON.stringify({
+                    &#x22;errno&#x22;: 500,
+                    &#x22;errmsg&#x22;: &#x22;Stringify failed ! Please check your action file : &#x22;+options.local+&#x22;! &#x22;
+                }));
+            }
+            return;
+        }
+        if (options.type === &#x27;auto&#x27;) {
+            return exports._remote(req, res, next, options);
+        }
+        return next();
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+  });
+}
+
+exports.handle = exports;
+exports.proxy = function (req, res, next, options) {
+if (options.type === &#x27;auto&#x27; || options.type === &#x27;local&#x27;) {
+    exports.<span class="apidocCodeKeywordSpan">_local</span>(req, res, next, options);
+}
+if (options.type === &#x27;remote&#x27;) {
+    exports._remote(req, res, next, options);
+}
+};
+exports._local = function (req, res, next, options) {
+fs.stat(options.local, function (err, stats) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle._remote" id="apidoc.element.clam.dataApiHandle._remote">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>_remote
+        <span class="apidocSignatureSpan">(req, res, next, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_remote = function (req, res, next, options) {
+    if (options.remote.agreement === &#x27;http&#x27;) {
+        return exports.httpProxy(req, res, next, options);
+    }
+    if (options.remote.agreement === &#x27;https&#x27;) {
+        return exports.httpsProxy(req, res, next, options);
+    }
+    if (options.remote.agreement === &#x27;socket&#x27;) {
+        return exports.socketProxy(req, res, next, options);
+    }
+    debug(&#x27;Remote failed; Unknown agreement &#x3c;%s&#x3e; &#x27;, options.agreement);
+    next();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+exports.handle = exports;
+exports.proxy = function (req, res, next, options) {
+if (options.type === &#x27;auto&#x27; || options.type === &#x27;local&#x27;) {
+    exports._local(req, res, next, options);
+}
+if (options.type === &#x27;remote&#x27;) {
+    exports.<span class="apidocCodeKeywordSpan">_remote</span>(req, res, next, options);
+}
+};
+exports._local = function (req, res, next, options) {
+fs.stat(options.local, function (err, stats) {
+    if (!err &#x26;&#x26; stats.isFile()) {
+        var action = require(options.local);
+        if (&#x27;function&#x27; === typeof action.handle) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.handle" id="apidoc.element.clam.dataApiHandle.handle">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>handle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">handle = function () {
+    return function (req, res, next) {
+        var remotes = exports.remotes;
+        // no interfaces defined
+        if (!remotes || !remotes.length) {
+            next();
+            return;
+        }
+        var url = uri.parse(req.url);
+        _.some(remotes, function (options) {
+            // equals or matched the option pathname
+            if (options.pathname === url.pathname || url.pathname.match(options.pathname)) {
+                exports.proxy(req, res, next, options);
+                return true;
+            }
+        }) || next();
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+};
+exports._local = function (req, res, next, options) {
+fs.stat(options.local, function (err, stats) {
+    if (!err &#x26;&#x26; stats.isFile()) {
+        var action = require(options.local);
+        if (&#x27;function&#x27; === typeof action.handle) {
+            action.<span class="apidocCodeKeywordSpan">handle</span>(req, res, next, options);
+            return;
+        }
+        try {
+            // 反回的数据不是模块，就认为是json了。只允许两种。推荐直接返回json。
+            // 如果会nodejs。直接操作数据。方便。快捷
+            res.setHeader(&#x27;Content-Type&#x27;, &#x27;application/json;text/json; charset=&#x27; + exports.charset);
+            res.write(JSON.stringify(action));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.httpProxy" id="apidoc.element.clam.dataApiHandle.httpProxy">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>httpProxy
+        <span class="apidocSignatureSpan">(req, res, next, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">httpProxy = function (req, res, next, options) {
+    var remote = options.remote;
+    var url = uri.parse(req.url);
+    var pathname = remote.pathname || url.pathname;
+    var querystring = remote.querystring;
+    querystring += (url.query ? &#x27;&#x26;&#x27; : &#x27;&#x27;) + (url.query || &#x27;&#x27;);
+
+    var nsreq = http.request({
+        host: remote.domain,
+        port: remote.port,
+        path: pathname + &#x27;?&#x27; + querystring,
+        method: req.method,
+        headers: req.headers
+    }, function (nsres) {
+        res.statusCode = nsres.statusCode;
+        // 返回的数据中头信息确保为对方反馈数据
+        var headers = nsres.headers;
+        var headerItem;
+        var header;
+        for (header in headers) {
+            headerItem = headers[header];
+            res.setHeader(header, headerItem);
+        }
+        var buffs = [];
+        // 收到数据，立刻返回。
+        nsres.on(&#x27;data&#x27;, function (chunk) {
+            buffs.push(chunk);
+        });
+        // 结束同时关闭此次连接
+        nsres.on(&#x27;end&#x27;, function () {
+            buff = joinbuffers(buffs);
+            //fix 80% situation bom problem.quick and dirty
+            if(buff[0] === 239 &#x26;&#x26; buff[1] === 187 &#x26;&#x26; buff[2] === 191) {
+                buff = buff.slice(3, buff.length);
+            }
+            var buffChatset = isUtf8(buff) ? &#x27;utf8&#x27; : &#x27;gbk&#x27;;
+            if (buffChatset !== exports.charset) {
+                buff = iconv.encode(iconv.decode(buff, buffChatset), exports.charset);
+            }
+            res.write(buff);
+            res.end();
+        });
+    });
+    req.on(&#x27;data&#x27;, function (chunk) {
+       nsreq.write(chunk);
+    });
+    req.on(&#x27;end&#x27;, function () {
+       nsreq.end();
+    });
+    nsreq.on(&#x27;error&#x27;, function (e) {
+        debug(e);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return exports._remote(req, res, next, options);
+    }
+    return next();
+});
+};
+exports._remote = function (req, res, next, options) {
+if (options.remote.agreement === &#x27;http&#x27;) {
+    return exports.<span class="apidocCodeKeywordSpan">httpProxy</span>(req, res, next, options);
+}
+if (options.remote.agreement === &#x27;https&#x27;) {
+    return exports.httpsProxy(req, res, next, options);
+}
+if (options.remote.agreement === &#x27;socket&#x27;) {
+    return exports.socketProxy(req, res, next, options);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.httpsProxy" id="apidoc.element.clam.dataApiHandle.httpsProxy">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>httpsProxy
+        <span class="apidocSignatureSpan">(req, res, next, info)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">httpsProxy = function (req, res, next, info) {
+    // ?
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+};
+exports._remote = function (req, res, next, options) {
+    if (options.remote.agreement === &#x27;http&#x27;) {
+        return exports.httpProxy(req, res, next, options);
+    }
+    if (options.remote.agreement === &#x27;https&#x27;) {
+        return exports.<span class="apidocCodeKeywordSpan">httpsProxy</span>(req, res, next, options);
+    }
+    if (options.remote.agreement === &#x27;socket&#x27;) {
+        return exports.socketProxy(req, res, next, options);
+    }
+    debug(&#x27;Remote failed; Unknown agreement &#x3c;%s&#x3e; &#x27;, options.agreement);
+    next();
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.proxy" id="apidoc.element.clam.dataApiHandle.proxy">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>proxy
+        <span class="apidocSignatureSpan">(req, res, next, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">proxy = function (req, res, next, options) {
+    if (options.type === &#x27;auto&#x27; || options.type === &#x27;local&#x27;) {
+        exports._local(req, res, next, options);
+    }
+    if (options.type === &#x27;remote&#x27;) {
+        exports._remote(req, res, next, options);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            next();
+            return;
+        }
+        var url = uri.parse(req.url);
+        _.some(remotes, function (options) {
+            // equals or matched the option pathname
+            if (options.pathname === url.pathname || url.pathname.match(options.pathname)) {
+                exports.<span class="apidocCodeKeywordSpan">proxy</span>(req, res, next, options);
+                return true;
+            }
+        }) || next();
+    };
+};
+exports.remotes = [];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.dataApiHandle.socketProxy" id="apidoc.element.clam.dataApiHandle.socketProxy">
+        function <span class="apidocSignatureSpan">clam.dataApiHandle.</span>socketProxy
+        <span class="apidocSignatureSpan">(req, res, next, info)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">socketProxy = function (req, res, next, info) {
+    // ?
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (options.remote.agreement === &#x27;http&#x27;) {
+    return exports.httpProxy(req, res, next, options);
+}
+if (options.remote.agreement === &#x27;https&#x27;) {
+    return exports.httpsProxy(req, res, next, options);
+}
+if (options.remote.agreement === &#x27;socket&#x27;) {
+    return exports.<span class="apidocCodeKeywordSpan">socketProxy</span>(req, res, next, options);
+}
+debug(&#x27;Remote failed; Unknown agreement &#x3c;%s&#x3e; &#x27;, options.agreement);
+next();
+};
+exports.charset = prjInfo ? prjInfo.charset[0] : &#x22;utf-8&#x22;;
+exports.httpProxy = function (req, res, next, options) {
+var remote = options.remote;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.hosts" id="apidoc.module.clam.hosts">module clam.hosts</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.hosts.restore" id="apidoc.element.clam.hosts.restore">
+        function <span class="apidocSignatureSpan">clam.hosts.</span>restore
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">restore = function () {
+    var host = hostFile.get();
+    var areaReg = new RegExp(beginTag+&#x27;[\\s\\S]*?&#x27;+endTag+&#x27;\\r?\\n?&#x27;, &#x27;g&#x27;);
+    host = host.replace(areaReg, &#x27;&#x27;);
+    hostFile.set(host);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            };
+        }
+
+    })();
+})();
+
+//test
+//NodeHostManager.<span class="apidocCodeKeywordSpan">restore</span>();
+exports = module.exports = NodeHostManager;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.hosts.setHosts" id="apidoc.element.clam.hosts.setHosts">
+        function <span class="apidocSignatureSpan">clam.hosts.</span>setHosts
+        <span class="apidocSignatureSpan">(pro_hosts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setHosts = function (pro_hosts) {
+    if(_.isString(pro_hosts)){
+        pro_hosts = pro_hosts.split(/\n\r?/);
+    }
+    parse_host();
+    lines.push(beginTag + split_char);
+    pro_hosts.forEach(function (item, i) {
+        var ip ;
+        item = item.replace(/^\s+|\s+$/g, &#x27;&#x27;);
+        item = item.replace(/\s+/g, &#x27; &#x27;);
+        item = item.split(&#x27; &#x27;);
+        if (ip_regx.test(item[0]) || ip6_regx.test[item[0]]) {
+            ip = item[0];
+            item.splice(0,1);
+            item.forEach(function (_name, _i) {
+                line_disable(_name);
+            });
+            lines.push(ip + &#x27; &#x27; + item.join(&#x27; &#x27;) + split_char);
+        }
+    });
+    lines.push(endTag + split_char);
+
+    hostFile.set(lines.join(&#x27;&#x27;));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var dirs = prjDir.split(path.sep);
+  prj.name = dirs[dirs.length - 1];
+}
+
+
+var oldPrj = config.get(&#x27;project&#x27;) || prj;
+if (oldPrj.hosts &#x26;&#x26; prj.hosts &#x26;&#x26; oldPrj.hosts !== prj.hosts) {
+  hostSwitch.<span class="apidocCodeKeywordSpan">setHosts</span>(prj.hosts);
+  actions.push({action: &#x27;更新hosts文件&#x27;, content: &#x27;操作系统hosts文件&#x27;});
+}
+for (var k in prj) {
+  oldPrj[k] = prj[k];
+}
+
+config.set(&#x27;project&#x27;, oldPrj);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.jsonHandle" id="apidoc.module.clam.jsonHandle">module clam.jsonHandle</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.jsonHandle.json" id="apidoc.element.clam.jsonHandle.json">
+        function <span class="apidocSignatureSpan">clam.jsonHandle.</span>json
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function jsonHandle() {
+    return function (req, res, next) {
+        var prjInfo = config.get(&#x27;project&#x27;);
+        var url = req.url;
+        if(url.indexOf(&#x27;?&#x27;) != -1){
+            url = url.slice(0, url.indexOf(&#x27;?&#x27;));
+        }
+        var isJson = false;
+        var jsonHandles = prjInfo.json;
+        if(!jsonHandles || jsonHandles.length === 0){
+            next();
+            return;
+        }
+        for(var i = 0; i &#x3c; jsonHandles.length; i++){
+            var map = jsonHandles[i];
+            var re = new RegExp(map.url);
+            if (url.match(re)) {
+                isJson = true;
+                if(map.enabled === &#x27;local&#x27;){
+                    //到本地找
+                    var localFile = path.join(config.root(), &#x27;.clam/json&#x27;, map.local);
+                    var localHandle = require(localFile);
+                    if(localHandle(req, res)){
+                        return;
+                    }
+                }
+
+                http.get({host:map.remote, port:80, path:req.url},function (resp) {
+                    var buffs = [];
+                    if (resp.statusCode !== 200) {
+                        res.end(&#x27;File &#x27; + url + &#x27; not found.&#x27;);
+                        return;
+                    }
+                    resp.on(&#x27;data&#x27;, function (chunk) {
+                        buffs.push(chunk);
+                    });
+                    resp.on(&#x27;end&#x27;, function () {
+                        var buff = joinbuffers(buffs);
+
+                        //fix 80% situation bom problem.quick and dirty
+                        if (buff[0] === 239 &#x26;&#x26; buff[1] === 187 &#x26;&#x26; buff[2] === 191) {
+                            buff = buff.slice(3, buff.length);
+                        }
+                        res.setHeader(&#x22;Content-Type&#x22;, &#x22;text/html&#x22;);
+                        res.end(buff);
+                    });
+                }).on(&#x27;error&#x27;, function (e) {
+                        debug(e);
+                });
+                break;
+            }
+        }
+        if(!isJson){
+            next();
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var plugBase = require(&#x22;plug-base&#x22;);
+plugBase.root(basePath ? basePath : &#x22;src&#x22;);
+plugBase.config(config_dir);
+plugBase
+  .use(doji.PACHandle())
+  .use(inspector)
+  .use(dataApiHandle())
+  .use(jsonHandle.<span class="apidocCodeKeywordSpan">json</span>(prjInfo))
+  .plug(require(&#x22;flex-combo&#x22;), {filter:{
+    &#x27;\\/\\$CLAM_VER\\$&#x27;: &#x27;&#x27;
+  }})
+  .plug(require(&#x22;essi&#x22;))
+  .listen(port || ports[0] || 80, sport || ports[1] || 443);
+
+var clamApp = plugBase.app;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.mocker" id="apidoc.module.clam.mocker">module clam.mocker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.mocker.getMixedMockDate" id="apidoc.element.clam.mocker.getMixedMockDate">
+        function <span class="apidocSignatureSpan">clam.mocker.</span>getMixedMockDate
+        <span class="apidocSignatureSpan">(param, url, isRootPage)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMixedMockDate(param, url, isRootPage){
+    if(!param){
+        param = {};
+    }
+
+    if(global){
+        for(var prop in global){
+            if(param[prop]){
+                continue;
+            }
+            param[prop] = global[prop];
+        }
+    }
+    param[&#x27;_pageUrl&#x27;] = url;
+    param[&#x27;_pageBaseName&#x27;] = path.basename(url);
+    if(!isRootPage){
+        return param;
+    }
+    if(!ifDatas[url]){
+        return param;
+    }
+    var urlData = ifDatas[url].response;
+    if(urlData){
+        for(var ifProp in urlData){
+            if(param[ifProp]){
+                continue;
+            }
+            param[ifProp] = urlData[ifProp];
+        }
+    }
+    debug(&#x27;页面最终内容%s&#x27;,url, util.inspect(param));
+    return param;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.mod" id="apidoc.module.clam.mod">module clam.mod</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.mod.add" id="apidoc.element.clam.mod.add">
+        function <span class="apidocSignatureSpan">clam.mod.</span>add
+        <span class="apidocSignatureSpan">(modName, description, template)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add = function (modName, description, template) {
+    var prjInfo = prj();
+    var actions = [];
+
+    //只支持几种扩展名，并且默认一个模块必须在子目录中
+    var modFileName = computeExt(modName);
+    if(modFileName.split(&#x27;/&#x27;).length === 1){
+        var modNameSet = modFileName.replace(/\..*$/, &#x27;&#x27;);
+        modFileName = modNameSet + &#x27;/&#x27; + modFileName;
+    }
+    debug(modFileName);
+    //如果存在相同模块报错
+    var modFilePath = path.join(conf.root(), prjInfo.modsDir, modFileName);
+    if (fs.existsSync(modFilePath)) {
+        return {
+            succeed: false,
+            msg: &#x27;已存在相同的模块，创建模块失败。&#x27;,
+            data: modFilePath
+        };;
+    }
+
+    //创建模块HTML文件目录
+    var modDir = path.join(modFilePath, &#x27;..&#x27;);
+    mkdirp.sync(modDir);
+
+    //修改目录权限为775
+    var modDepsdirs = modFileName.split(&#x27;/&#x27;);
+    var dir = &#x27;&#x27;, j = 0;
+    for(var i = 0; i &#x3c; modDepsdirs.length-1; i++){
+        dir = path.join(conf.root(), prjInfo.modsDir);
+        j = 0;
+        while(j &#x3c;= i ){
+            dir = path.join(dir, modDepsdirs[j]);
+            j++;
+        }
+        debug(&#x27;修改目录权限%s&#x27;, dir);
+        fs.chmodSync(dir,&#x27;775&#x27;);
+    }
+
+    //取得模板路径
+    if(!template){
+        template = &#x27;default&#x27;;
+    }
+    var userHome = process.env.HOME || process.env.HOMEPATH;//兼容windows
+    var templateDir = path.join(userHome, &#x27;.clamconfig/templates&#x27;, template,&#x27;mod&#x27;);
+    if(!fs.existsSync(templateDir)){
+        return {
+            succeed: false,
+            msg: &#x27;模板&#x27;+template+&#x27;不存在&#x27;,
+            data: &#x27;&#x27;
+        };
+    }
+
+    //转换模板
+    var bn = modDepsdirs[modDepsdirs.length-1];
+    var baseModName = path.basename(bn, path.extname(bn));
+    var modInfo = {
+        name: baseModName,
+        description: description
+    };
+    var param = {project: prjInfo, mod: modInfo};
+    templateCenter.convert(templateDir, modDir, param, baseModName);
+
+    //记录模块元信息
+    var metaInfo = conf.get(&#x27;mod&#x27;);
+    if(!metaInfo){
+        metaInfo = {};
+    }
+
+    metaInfo[modFileName.replace(/\.(html)$/,&#x27;&#x27;)] = modInfo;
+    conf.set(&#x27;mod&#x27;, metaInfo);
+    actions.push({action:&#x27;更新模块元信息&#x27;, content: &#x27;.clam/mod.json&#x27;});
+
+    //完成创建后执行回调
+    return {
+        succeed: true,
+        msg: &#x27;模块创建&#x27;,
+        data: actions
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.mod.addCore" id="apidoc.element.clam.mod.addCore">
+        function <span class="apidocSignatureSpan">clam.mod.</span>addCore
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addCore = function (){
+    var prjInfo = prj();
+    var name = config.coreName;
+    //添加核心模块
+    addMod({
+        name:name,
+        description:&#x22;项目核心模块，包含一些不依赖任何库的JS方法和页头页尾等通用模块&#x22;,
+        addjs:true,
+        addcss:true,
+        jsns:prjInfo.jsns
+    },{
+        templateDir : config.coreTemplate
+    });
+    //添加头&#x3c;head&#x3e;内容模块
+    addMod({
+        name:name+&#x22;/head&#x22;,
+        description:&#x22;项目页面head标签部分内容&#x22;,
+        addjs:false,
+        addcss:false
+    },{
+        templateDir : config.headTemplate
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.mod.del" id="apidoc.element.clam.mod.del">
+        function <span class="apidocSignatureSpan">clam.mod.</span>del
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del = function (data) {
+    var prjInfo = prj();
+    var dirName = path.dirname(data.name);
+    var fileName = path.basename(data.name);
+    var modDir = path.join(conf.root(), prjInfo.modsDir, dirName);
+    var modPath = path.join(conf.root(), prjInfo.modsDir, dirName, fileName+&#x27;.&#x27;+prjInfo.pageext[0]);
+    var actions = [];
+    if(!fs.existsSync(modPath)){
+        return {
+            succeed:false,
+            msg:modPath+&#x22;文件不存在&#x22;
+        }
+    }
+    //删除页面文件
+    fs.unlinkSync(modPath);
+    actions.push({action:&#x27;删除文件&#x27;, content: modPath});
+    //检查该文件夹下是否还有文件，如果没有的话就删掉
+    var list = fs.readdirSync(modDir);
+    list = _.filter(list,function(file){
+        return _.any(config.suffix, function(value) {
+            return file.lastIndexOf(value) !== -1;
+        });
+    });
+    if(list.length==0){
+        walk.rmrfSync(modDir);
+        actions.push({action:&#x27;删除文件目录&#x27;, content: modDir});
+    }
+    return {succeed:true,
+        msg:&#x27;删除页面&#x27;,
+        data:actions
+    };
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.mod.list" id="apidoc.element.clam.mod.list">
+        function <span class="apidocSignatureSpan">clam.mod.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function () {
+    var prjInfo = prj();
+
+    var modsDir = path.join(conf.root(), prjInfo.modsDir);
+    var metaFile = path.join(conf.root(), config.metaDir, config.metaFile);
+    var modsFiles = walk.walkSync(modsDir);
+    modsFiles = _.filter(modsFiles, function(file) {
+        return _.any(config.suffix, function(value) {
+            // 改为直接用后缀名判断，防止.vm.swp 这类文件混入
+            var fileSuffix = file.match(/.*\/.*\.(\w+)$/)[1];
+            return fileSuffix == value;
+        });
+    });
+    //console.log(modsFiles);
+    //conf.root() + prjInfo.dir
+    var metaInfo = conf.get(&#x27;mod&#x27;);
+
+    var info = _.map(modsFiles, function(file) {
+        var fileName = file.slice(modsDir.length+1, file.length);
+        var modName = file.slice(modsDir.length+1, file.lastIndexOf(&#x27;.&#x27;));
+        var description = &#x27;&#x27;;
+        if(metaInfo){
+            description = metaInfo[modName] ? metaInfo[modName].description : &#x27;&#x27;;
+        }
+
+        return {
+            name : modName,
+            file : fileName,
+            description : description
+        };
+    });
+    return {succeed:true,
+        msg:&#x27;获取模块信息&#x27;,
+        data:info
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.page" id="apidoc.module.clam.page">module clam.page</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.page.add" id="apidoc.element.clam.page.add">
+        function <span class="apidocSignatureSpan">clam.page.</span>add
+        <span class="apidocSignatureSpan">(name, url, description, template)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function add(name, url, description, template) {
+    var prjInfo = conf.get(&#x27;project&#x27;);
+    var root = conf.root();
+    var metaFile = path.join(root, config.metaDir, config.metaFile);
+    var actions = [];
+
+    var pageFileName = computeExt(name);
+
+<span class="apidocCodeCommentSpan">    /**
+     * 处理单页页面目录和多层页面目录结构，单层结构的都加上
+     */
+</span>
+    var pagePath = path.join(root, prjInfo.pagesDir, pageFileName);
+
+    if (fs.existsSync(pagePath)) {
+        return {succeed:false,
+            msg:&#x27;存在相同的页面，创建页面失败。&#x27;,
+            data:pagePath
+        };
+    }
+    console.log(&#x22;Creating page:&#x22;+pagePath);
+
+    //创建模块HTML文件目录
+    var pageDir = path.join(pagePath, &#x27;..&#x27;);
+    mkdirp.sync(pageDir);
+
+    //修改目录权限为775
+    var pageDepsdirs = pageFileName.split(&#x27;/&#x27;);
+    var dir = &#x27;&#x27;, j=0;
+    for(var i = 0; i &#x3c; pageDepsdirs.length-1; i++){
+        dir = path.join(conf.root(), prjInfo.pagesDir);
+        j   = 0;
+        while(j &#x3c;= i ){
+            dir = path.join(dir, pageDepsdirs[j]);
+            j++;
+        }
+        debug(&#x27;修改目录权限%s&#x27;, dir);
+        fs.chmodSync(dir,&#x27;775&#x27;);
+    }
+
+    //取得模板路径
+    if(!template){
+        template = &#x27;default&#x27;;
+    }
+    var userHome = process.env.HOME || process.env.HOMEPATH;//兼容windows
+    var templateDir = path.join(userHome, &#x27;.clamconfig/templates&#x27;, template,&#x27;page&#x27;);
+    if(!fs.existsSync(templateDir)){
+        return {
+            succeed: false,
+            msg: &#x27;模板&#x27;+template+&#x27;不存在&#x27;,
+            data: &#x27;&#x27;
+        };
+    }
+
+    //转换模板
+    var bn = pageDepsdirs[pageDepsdirs.length-1];
+    var pageName = path.basename(bn, path.extname(bn));
+    var pageInfo = {
+        name: pageName,
+        url: url,
+        description: description
+    };
+    debug(&#x27;变量信息:%s&#x27;, util.inspect(pageInfo));
+    var param = {project: prjInfo, page: pageInfo};
+    templateCenter.convert(templateDir, pageDir, param, pageName);
+
+    actions.push({action:&#x27;创建页面&#x27;, content: pagePath});
+
+    //记录page元信息
+    var metaInfo = conf.get(&#x27;page&#x27;);
+    if(!metaInfo){
+        metaInfo = {};
+    }
+
+    metaInfo[pageFileName.replace(/\.(html)$/,&#x27;&#x27;)] = pageInfo;
+    conf.set(&#x27;page&#x27;, metaInfo);
+    actions.push({action:&#x27;更新页面元信息&#x27;, content: metaFile});
+
+    return {
+        succeed: true,
+        msg: &#x27;创建页面&#x27;,
+        data: actions
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.page.del" id="apidoc.element.clam.page.del">
+        function <span class="apidocSignatureSpan">clam.page.</span>del
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del = function (data) {
+    var prjInfo = conf.get(&#x27;project&#x27;);
+    var root = conf.root();
+    var dirName = path.dirname(data.name);
+    var fileName = path.basename(data.name);
+    var pageDir = path.join(root, &#x27;src&#x27;, dirName);
+    var pagePath = path.join(root, &#x27;src&#x27;, dirName, fileName + &#x27;.html&#x27;);
+    var actions = [];
+    //删除页面文件
+    fs.unlinkSync(pagePath);
+    actions.push({action:&#x27;删除页面文件&#x27;, content: pagePath});
+    //检查该文件夹下是否还有文件，如果没有的话就删掉
+    var list = fs.readdirSync(pageDir);
+    if(list.length==0 &#x26;&#x26; path.basename(pageDir) != path.basename(&#x27;src&#x27;)){
+        fs.rmdirSync(pageDir);
+        actions.push({action:&#x27;删除页面文件目录&#x27;, content: pagePath});
+    }
+    return {succeed:true,
+        msg:&#x27;删除页面&#x27;,
+        data:actions
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.page.list" id="apidoc.element.clam.page.list">
+        function <span class="apidocSignatureSpan">clam.page.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function () {
+    var prjInfo = conf.get(&#x27;project&#x27;);
+    var root = conf.root();
+    var pageDir = path.join(root, &#x27;src&#x27;);
+    var metaFile = path.join(root, config.metaDir, config.metaFile);
+    var pageFiles = walk.walkSync(pageDir);
+
+    //过滤掉非html文件
+    var filter_page = new RegExp(path.join(root, prjInfo.pagesDir).replace(/\\/g, &#x27;/&#x27;)+&#x22;.+\\.html$&#x22;),
+        filter_root = new RegExp(path.join(root, prjInfo.pagesDir+&#x22;/..&#x22;).replace(/\\/g, &#x27;/&#x27;)+&#x22;/([^\/]*?)\\.html$&#x22;);
+    pageFiles = _.filter(pageFiles, function (file) {
+        if (file.match(filter_page)) {
+            return true;
+        }
+        else {
+            return file.match(filter_root) ? true : false;
+        }
+    });
+    debug(&#x27;页面%s&#x27;, util.inspect(pageFiles));
+    pageFiles = pageFiles.sort(function (a, b) {
+        return a &#x3c; b;
+    });
+    var metaInfo = conf.get(&#x27;page&#x27;);
+    var info = _.map(pageFiles, function (file) {
+        var pageName = file.slice(pageDir.length+1, file.lastIndexOf(&#x27;.&#x27;));
+        var pageFileName = file.slice(pageDir.length+1, file.length);
+        var description = &#x27;&#x27;;
+        var onlineurl = &#x27;&#x27;;
+        var pagelib = &#x27;&#x27;;
+        if(metaInfo){
+            description = metaInfo[pageName] ? metaInfo[pageName].description : &#x27;&#x27;;
+            onlineurl = metaInfo[pageName] ? metaInfo[pageName].url : &#x27;&#x27;;
+            pagelib = metaInfo[pageName] ? metaInfo[pageName].lib : &#x27;&#x27;;
+        }
+
+        return {
+            name: pageName,
+            file: pageFileName,
+            description: description,
+            url: onlineurl,
+            lib: pagelib,
+            fileExt: &#x27;html&#x27;
+        };
+    });
+    return {
+        succeed:true,
+        msg:&#x27;获取页面信息&#x27;,
+        data:info
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.page.update" id="apidoc.element.clam.page.update">
+        function <span class="apidocSignatureSpan">clam.page.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function () {
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.project" id="apidoc.module.clam.project">module clam.project</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.project.project" id="apidoc.element.clam.project.project">
+        function <span class="apidocSignatureSpan">clam.</span>project
+        <span class="apidocSignatureSpan">(prj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">project = function (prj) {
+  prjDir = config.root();
+  debug(&#x27;项目目录:%s&#x27;, prjDir);
+  var state = prjState(prjDir);
+  debug(&#x27;项目状态:%s&#x27;, state);
+  if (!prj) {
+    var info = getProject(prjDir, state);
+    return info;
+  }
+
+  var actions = [];
+  if (state !== &#x27;normal&#x27;) {
+    if (state === &#x27;blank&#x27;) {
+      var pagesFullDir = path.join(prjDir, initConf.pagesDir);
+      mkdirp.sync(pagesFullDir);
+      actions.push({action: &#x27;创建页面目录&#x27;, content: pagesFullDir});
+
+      var modsFullDir = path.join(prjDir, initConf.modsDir);
+      mkdirp.sync(modsFullDir);
+      actions.push({action: &#x27;创建模块目录&#x27;, content: modsFullDir});
+
+      var widgetsFullDir = path.join(prjDir, initConf.widgetsDir)
+      mkdirp.sync(widgetsFullDir);
+      actions.push({action: &#x27;创建组件目录&#x27;, content: widgetsFullDir});
+
+      var buildFullDir = path.join(prjDir, initConf.buildDir);
+      mkdirp.sync(buildFullDir);
+      actions.push({action: &#x27;创建构建目录&#x27;, content: buildFullDir});
+
+      var testsFullDir = path.join(prjDir, initConf.testsDir);
+      mkdirp.sync(testsFullDir);
+      actions.push({action: &#x27;创建测试目录&#x27;, content: testsFullDir});
+    }
+    prj = initConf;
+    var dirs = prjDir.split(path.sep);
+    prj.name = dirs[dirs.length - 1];
+  }
+
+
+  var oldPrj = config.get(&#x27;project&#x27;) || prj;
+  if (oldPrj.hosts &#x26;&#x26; prj.hosts &#x26;&#x26; oldPrj.hosts !== prj.hosts) {
+    hostSwitch.setHosts(prj.hosts);
+    actions.push({action: &#x27;更新hosts文件&#x27;, content: &#x27;操作系统hosts文件&#x27;});
+  }
+  for (var k in prj) {
+    oldPrj[k] = prj[k];
+  }
+
+  config.set(&#x27;project&#x27;, oldPrj);
+  actions.push({action: &#x27;更新项目元文件&#x27;, content: &#x27;.clam/project.json&#x27;});
+
+  //getMuiConfig();
+  //actions.push({action: &#x27;更新项目gconfig文件&#x27;, content: &#x27;.clam/gconfig.json&#x27;});
+
+  return {
+    succeed: true,
+    msg: &#x27;更新项目信息&#x27;,
+    data: actions
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.project.setUrls" id="apidoc.element.clam.project.setUrls">
+        function <span class="apidocSignatureSpan">clam.project.</span>setUrls
+        <span class="apidocSignatureSpan">(urls)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setUrls = function (urls) {
+  if (!urls) {
+    return {
+      succeed: false,
+      msg: &#x27;更新项目信息&#x27;,
+      data: actions
+    };
+  }
+  prjDir = config.root();
+  var prj = config.get(&#x27;project&#x27;);
+  prj.urls = urls;
+  config.set(&#x27;project&#x27;, prj);
+  config.set(&#x27;project&#x27;, prj);
+  var actions = [];
+  actions.push({action: &#x27;更新项目元文件&#x27;, content: &#x27;.clam/project.json&#x27;});
+  return {
+    succeed: true,
+    msg: &#x27;更新项目信息&#x27;,
+    data: actions
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.proxy" id="apidoc.module.clam.proxy">module clam.proxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.proxy.fetch" id="apidoc.element.clam.proxy.fetch">
+        function <span class="apidocSignatureSpan">clam.proxy.</span>fetch
+        <span class="apidocSignatureSpan">(url, host, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fetch = function (url, host, callback) {
+    var filteredUrl = url,
+        requestOption = {
+            path: url,
+            host: host,
+            port: 80,
+            agent: false
+        };
+
+    callback = typeof callback == &#x22;function&#x22; ? callback : function(code){console.log(code);};
+
+    http.get(requestOption, function(resp) {
+        var buffs = [];
+        if (resp.statusCode !== 200) {
+            var headerHost = requestOption.host;
+            cosoleResp(&#x27;Not found&#x27;, requestOption.host + requestOption.path + &#x27; (host:&#x27;+ reset + yellow + headerHost + reset + &#x27;)&#x27;);
+            callback(&#x27;File &#x27; + requestOption.host + requestOption.path + &#x27; not found.&#x27;, 404);
+            return;
+        }
+        resp.on(&#x27;data&#x27;, function(chunk) {
+            buffs.push(chunk);
+        });
+        resp.on(&#x27;end&#x27;, function() {
+            var buff = joinbuffers(buffs);
+
+            //fix 80% situation bom problem.quick and dirty
+            if(buff[0] === 239 &#x26;&#x26; buff[1] === 187 &#x26;&#x26; buff[2] === 191) {
+                buff = buff.slice(3, buff.length);
+            }
+            if(isBinFile(filteredUrl)){
+                cosoleResp(&#x27;Remote&#x27;, requestOption.host + requestOption.path);
+                callback(buff, 200);
+                return;
+            }
+            cosoleResp(&#x27;Remote&#x27;, requestOption.host + requestOption.path);
+            var charset = isUtf8(buff) ? &#x27;utf8&#x27; : &#x27;gbk&#x27;;
+            var outputCharset = prjInfo.charset[0];
+
+            callback(adaptCharset(buff, outputCharset, charset), 200);
+            return;
+        });
+    }).on(&#x27;error&#x27;,function() {
+        callback(&#x27;404 Error, File not found.&#x27;, 404);
+        return;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.selectfile" id="apidoc.module.clam.selectfile">module clam.selectfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.selectfile.getTree" id="apidoc.element.clam.selectfile.getTree">
+        function <span class="apidocSignatureSpan">clam.selectfile.</span>getTree
+        <span class="apidocSignatureSpan">(root)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getTree(root) {
+    var files = [];
+    var fileItems;
+    curDir = root?root:curDir;
+
+    if (!fs.existsSync(curDir)) {
+        throw &#x22;Can&#x27;t find folder&#x22;;
+        return;
+    }
+    var stat = fs.statSync(curDir);
+
+    if (stat.isDirectory()) {
+        fileItems = fs.readdirSync(curDir);
+        if(curDir!=&#x22;/&#x22;){
+            files.push({
+                name : &#x22;..&#x22;,
+                path : path.join(curDir, &#x22;..&#x22;),
+                icon : &#x22;icon-arrow-up&#x22;,
+                type : &#x22;folder&#x22;
+            });
+        }
+        _.each(fileItems, function(name) {
+            var p = path.join(curDir, name);
+            var s = fs.statSync(p);
+            var isD = s.isDirectory();
+            var icon = isD ? &#x22;icon-folder-open&#x22; : &#x22;icon-file&#x22;;
+            var type = isD ? &#x22;folder&#x22; : &#x22;file&#x22;;
+            if(name.indexOf(&#x22;.&#x22;)==0)return;
+            files.push({
+                name : name,
+                path : p,
+                icon : icon,
+                type : type
+            });
+        });
+    }
+
+    return {
+        files:files,
+        cur:curDir
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.template" id="apidoc.module.clam.template">module clam.template</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.template.convert" id="apidoc.element.clam.template.convert">
+        function <span class="apidocSignatureSpan">clam.template.</span>convert
+        <span class="apidocSignatureSpan">(src, dest, param, destName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function convert(src, dest, param, destName){
+    eachFile(src, function(file){
+        var tmplContent = fs.readFileSync(file);
+
+        //探测并转换文本内容编码
+        var utf8 = isUtf8(tmplContent);
+        if (utf8) {
+            tmplContent = tmplContent.toString();
+        }
+        else {
+            tmplContent = iconv.decode(tmplContent, &#x27;gbk&#x27;);
+        }
+
+        //模板处理引擎
+        var pageContent = J(tmplContent, param);
+
+        //复制到destDir并且处理编码问题
+        var dir = path.dirname(file);
+        var relative = path.relative(src, dir);
+        var destDir = path.join(dest, relative);
+        mkdirp.sync(destDir);
+        destName = path.basename(destName);
+        var destFilePath = path.basename(file).replace(/template(\..*)/, destName+&#x27;$1&#x27;);
+        destFilePath = path.join(destDir, destFilePath);
+        var c = iconv.encode(pageContent,config.get(&#x27;project&#x27;).charset[0]);
+        fs.writeFileSync(destFilePath, c);
+        fs.chmodSync(destFilePath, &#x22;777&#x22;);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var bn = modDepsdirs[modDepsdirs.length-1];
+var baseModName = path.basename(bn, path.extname(bn));
+var modInfo = {
+    name: baseModName,
+    description: description
+};
+var param = {project: prjInfo, mod: modInfo};
+templateCenter.<span class="apidocCodeKeywordSpan">convert</span>(templateDir, modDir, param, baseModName);
+
+//记录模块元信息
+var metaInfo = conf.get(&#x27;mod&#x27;);
+if(!metaInfo){
+    metaInfo = {};
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.template.init" id="apidoc.element.clam.template.init">
+        function <span class="apidocSignatureSpan">clam.template.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function init(){
+    var userHome = process.env.HOME || process.env.HOMEPATH;//兼容windows
+    var cacheDir = path.join(userHome, &#x27;.clamconfig/templates/default&#x27;);
+    if(fs.existsSync(cacheDir)){
+        return;
+    }
+    mkdirp.sync(cacheDir);
+    var sourceRoot = path.join(__dirname,&#x27;../resource&#x27;);
+    function copyFn(file){
+        debug(&#x27;复制默认模板文件%s&#x27;, path.basename(file));
+        var dir = path.dirname(file);
+        var relative = path.relative(sourceRoot, dir);
+        var destDir = path.join(cacheDir, relative);
+        mkdirp.sync(destDir);
+        var srcFile = fs.readFileSync(file);
+        var destFilePath = path.join(destDir, path.basename(file));
+        fs.writeFileSync(destFilePath, srcFile);
+    }
+    eachFile(sourceRoot, copyFn);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var template = require(&#x27;./lib/template.js&#x27;);
+var mod = require(&#x27;./lib/mod.js&#x27;);
+var page = require(&#x27;./lib/page.js&#x27;);
+var widget = require(&#x27;./lib/widget.js&#x27;);
+
+var clam = module.exports = {
+    init: function(){
+config.<span class="apidocCodeKeywordSpan">init</span>();
+template.init();
+var ret = project({});
+
+ret.data.forEach(function (ac) {
+    debug(ac.action, ac.content);
+});
+process.exit(0);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.widget" id="apidoc.module.clam.widget">module clam.widget</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.widget.add" id="apidoc.element.clam.widget.add">
+        function <span class="apidocSignatureSpan">clam.widget.</span>add
+        <span class="apidocSignatureSpan">(widgetName, description, template)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add = function (widgetName, description, template) {
+    var prjInfo = prj();
+    var actions = [];
+
+    //如果存在相同模块报错
+    var widgetDirPath = path.join(conf.root(), prjInfo.widgetsDir, widgetName);
+    if (fs.existsSync(widgetDirPath)) {
+        return {
+            succeed: false,
+            msg: &#x27;已存在相同的组件，创建模块失败。&#x27;,
+            data: widgetDirPath
+        };
+    }
+
+    //创建模块HTML文件目录
+    mkdirp.sync(widgetDirPath);
+
+    //修改目录权限为775
+    var widgetDepsdirs = widgetName.split(&#x27;/&#x27;);
+    var dir = &#x27;&#x27;, j = 0;
+    for(var i = 0; i &#x3c; widgetDepsdirs.length-1; i++){
+        dir = path.join(conf.root(), prjInfo.widgetsDir);
+        j = 0;
+        while(j &#x3c;= i ){
+            dir = path.join(dir, widgetDepsdirs[j]);
+            j++;
+        }
+        debug(&#x27;修改目录权限%s&#x27;, dir);
+        fs.chmodSync(dir,&#x27;775&#x27;);
+    }
+
+    //取得模板路径
+    if(!template){
+        template = &#x27;default&#x27;;
+    }
+    var userHome = process.env.HOME || process.env.HOMEPATH;//兼容windows
+    var templateDir = path.join(userHome, &#x27;.clamconfig/templates&#x27;, template, &#x27;widget&#x27;);
+    if(!fs.existsSync(templateDir)){
+        return {
+            succeed: false,
+            msg: &#x27;模板&#x27;+template+&#x27;不存在&#x27;,
+            data: &#x27;&#x27;
+        };
+    }
+
+    //转换模板
+    var widgetBaseName = path.basename(widgetName);
+    var widgetInfo = {
+        name: widgetBaseName,
+        description: description
+    };
+    var param = {project: prjInfo, widget: widgetInfo};
+    templateCenter.convert(templateDir, widgetDirPath, param, widgetBaseName);
+
+    //记录模块元信息
+    var metaInfo = conf.get(&#x27;widget&#x27;);
+    if(!metaInfo){
+        metaInfo = {};
+    }
+
+    metaInfo[widgetName] = widgetInfo;
+    conf.set(&#x27;widget&#x27;, metaInfo);
+
+    actions.push({action:&#x27;更新组件元信息&#x27;, content: &#x27;&#x27;});
+
+    //完成创建后执行回调
+    return {
+        succeed: true,
+        msg: &#x27;组件创建&#x27;,
+        data: actions
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.widget.del" id="apidoc.element.clam.widget.del">
+        function <span class="apidocSignatureSpan">clam.widget.</span>del
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del = function (data) {
+    var prjInfo = prj();
+    var dirName = data.name;
+    var widgetDir = path.join(conf.root(), prjInfo.widgetsDir, dirName);
+    var actions = [];
+    if(!fs.existsSync(widgetDir)){
+        return {
+            succeed:false,
+            msg:&#x22;文件不存在&#x22;
+        }
+    }
+    //检查该文件夹下是否还有文件，如果没有的话就删掉
+    walk.rmrfSync(widgetDir);
+    actions.push({action:&#x27;删除文件目录&#x27;, content: widgetDir});
+
+    return {succeed:true,
+        msg:&#x27;删除组件&#x27;,
+        data:actions
+    };
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.widget.list" id="apidoc.element.clam.widget.list">
+        function <span class="apidocSignatureSpan">clam.widget.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function () {
+    var prjInfo = prj();
+
+    var widgetsDir = path.join(conf.root(), prjInfo.widgetsDir);
+    var metaFile = path.join(conf.root(), config.metaDir, config.metaFile);
+    var widgets = fs.readdirSync(widgetsDir);
+
+    //获取widgets目录下所有文件夹
+    widgets = _.filter(widgets, function(file) {
+        return fs.statSync(path.join(widgetsDir,file)).isDirectory()
+    });
+
+    //console.log(widgets);
+
+
+    //获取组件元数据
+    var metaInfo = {};
+    try {
+        var metaStr = fs.readFileSync(metaFile);
+        metaInfo = JSON.parse(metaStr);
+    } catch(e) {
+        metaInfo = {};
+    }
+
+    //console.log(metaInfo);
+
+    //分析组件数据
+    var info = _.map(widgets, function(widgetName) {
+        var description = metaInfo[widgetName] ? metaInfo[widgetName].description : &#x27;&#x27;;
+        return {
+            name : widgetName,
+            description : description
+        };
+    });
+
+
+    return {succeed:true,
+        msg:&#x27;获取模块信息&#x27;,
+        data:info
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>

@@ -1,6 +1,6 @@
 # npmdoc-clam
 
-#### api documentation for  clam (v1.0.12)  [![npm package](https://img.shields.io/npm/v/npmdoc-clam.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-clam) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-clam.svg)](https://travis-ci.org/npmdoc/node-npmdoc-clam)
+#### basic api documentation for  clam (v1.0.12)  [![npm package](https://img.shields.io/npm/v/npmdoc-clam.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-clam) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-clam.svg)](https://travis-ci.org/npmdoc/node-npmdoc-clam)
 
 #### A full Web front end develop envirment.
 

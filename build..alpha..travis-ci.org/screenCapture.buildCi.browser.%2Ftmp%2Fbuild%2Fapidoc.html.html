@@ -83,8 +83,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.clam.on">
-            function <span class="apidocSignatureSpan">clam.</span>on
+            <a class="apidocElementLiA" href="#apidoc.element.clam.map">
+            function <span class="apidocSignatureSpan">clam.</span>map
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -92,8 +92,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.clam.pacHandle">
-            function <span class="apidocSignatureSpan">clam.</span>pacHandle
+            <a class="apidocElementLiA" href="#apidoc.element.clam.on">
+            function <span class="apidocSignatureSpan">clam.</span>on
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -104,15 +104,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.clam.project">
             function <span class="apidocSignatureSpan">clam.</span>project
             <span class="apidocSignatureSpan">(prj)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.clam.server">
-            function <span class="apidocSignatureSpan">clam.</span>server
-            <span class="apidocSignatureSpan">(needInject, basePath, port, sport)</span>
             </a>
 
         </li>
@@ -131,6 +122,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>beautify</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>config</span>
 
         </li>
@@ -144,6 +141,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>jsonHandle</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>map.prototype</span>
 
         </li>
 
@@ -179,7 +182,19 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>ssi</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>template</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.</span>walk</span>
 
         </li>
 
@@ -226,13 +241,13 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.clam.build">module clam.build</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.beautify">module clam.beautify</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.clam.build.build">
-            function <span class="apidocSignatureSpan">clam.</span>build
-            <span class="apidocSignatureSpan">(timestamp)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.clam.beautify.js_beautify">
+            function <span class="apidocSignatureSpan">clam.beautify.</span>js_beautify
+            <span class="apidocSignatureSpan">(js_source_text, options)</span>
             </a>
 
         </li>
@@ -404,19 +419,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.clam.init">module clam.init</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.clam.init.init">
-            function <span class="apidocSignatureSpan">clam.</span>init
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.clam.jsonHandle">module clam.jsonHandle</a><ol>
 
         <li>
@@ -424,6 +426,41 @@
             <a class="apidocElementLiA" href="#apidoc.element.clam.jsonHandle.json">
             function <span class="apidocSignatureSpan">clam.jsonHandle.</span>json
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.map">module clam.map</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.map.map">
+            function <span class="apidocSignatureSpan">clam.</span>map
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.map.prototype">module clam.map.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.map.prototype.get">
+            function <span class="apidocSignatureSpan">clam.map.prototype.</span>get
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.map.prototype.put">
+            function <span class="apidocSignatureSpan">clam.map.prototype.</span>put
+            <span class="apidocSignatureSpan">(key, value)</span>
             </a>
 
         </li>
@@ -478,38 +515,6 @@
             function <span class="apidocSignatureSpan">clam.mod.</span>list
             <span class="apidocSignatureSpan">()</span>
             </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.clam.on">module clam.on</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.clam.on.on">
-            function <span class="apidocSignatureSpan">clam.</span>on
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.clam.pacHandle">module clam.pacHandle</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.clam.pacHandle.pacHandle">
-            function <span class="apidocSignatureSpan">clam.</span>pacHandle
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">clam.pacHandle.</span>localAddresses</span>
 
         </li>
 
@@ -603,13 +608,13 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.clam.server">module clam.server</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.ssi">module clam.ssi</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.clam.server.server">
-            function <span class="apidocSignatureSpan">clam.</span>server
-            <span class="apidocSignatureSpan">(needInject, basePath, port, sport)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.clam.ssi.getHtml">
+            function <span class="apidocSignatureSpan">clam.ssi.</span>getHtml
+            <span class="apidocSignatureSpan">(res, fullpath)</span>
             </a>
 
         </li>
@@ -632,6 +637,46 @@
             <a class="apidocElementLiA" href="#apidoc.element.clam.template.init">
             function <span class="apidocSignatureSpan">clam.template.</span>init
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.clam.walk">module clam.walk</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.walk.walk">
+            function <span class="apidocSignatureSpan">clam.</span>walk
+            <span class="apidocSignatureSpan">(dir, done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.walk.rmrf">
+            function <span class="apidocSignatureSpan">clam.walk.</span>rmrf
+            <span class="apidocSignatureSpan">(dir, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.walk.rmrfSync">
+            function <span class="apidocSignatureSpan">clam.walk.</span>rmrfSync
+            <span class="apidocSignatureSpan">(dir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.clam.walk.walkSync">
+            function <span class="apidocSignatureSpan">clam.walk.</span>walkSync
+            <span class="apidocSignatureSpan">(dir)</span>
             </a>
 
         </li>
@@ -772,6 +817,41 @@ process.exit(0);
 
 
     <h2>
+        <a href="#apidoc.element.clam.map" id="apidoc.element.clam.map">
+        function <span class="apidocSignatureSpan">clam.</span>map
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Map() {
+    if (!this instanceof Map) {
+        return new Map();
+    }
+    this._cache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return;
+}
+//è¿”å›žæ•°ç»„ï¼Œè¡¨ç¤ºæ˜¯ç›®å½•ï¼Œéœ€è¦æ˜¾ç¤ºç›®å½•ã€‚
+if(util.isArray(realPageRelativePath)){
+    var files = realPageRelativePath.sort();
+    debug('files', util.inspect(files));
+    var tplPath = path.join(__dirname, conf.templateDir, conf.template);
+    _.<span class="apidocCodeKeywordSpan">map</span>(files, function(file){
+        file.path = path.join(url, file.name);
+        return file;
+    })
+    // this is using juicer engine only
+    var pageContent = J(fs.readFileSync(tplPath).toString(), {folder : url, back: join(url, '..').replace(/\\/g, '
+;/'), folderInfo:files});
+    // this is using an include render and juicer
+    // var pageContent = J(compile.render(tplPath, [modsDir], prjInfo.cdnPath), {folderInfo: files});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.clam.on" id="apidoc.element.clam.on">
         function <span class="apidocSignatureSpan">clam.</span>on
         <span class="apidocSignatureSpan">()</span>
@@ -797,45 +877,6 @@ process.exit(0);
 }
 // clam.<span class="apidocCodeKeywordSpan">on</span>();
 ...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.clam.pacHandle" id="apidoc.element.clam.pacHandle">
-        function <span class="apidocSignatureSpan">clam.</span>pacHandle
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">pacHandle = function () {
-  return function (req, res, next) {
-    var urlInfo = url.parse(req.url, true);
-    var extname = path.extname(urlInfo.pathname);
-    if (extname === '.pac') {
-      var ipAddress = JSON.stringify(exports.localAddresses);
-      var localAddress = req.connection.localAddress.split(':').pop();
-      var pac = [
-        'var ipAddress = ' + ipAddress + ';',
-        'function FindProxyForURL (url, host) {',
-          'var host = host.split(":")[0].toLowerCase();',
-          'var url = url.toLowerCase();',
-          'if (ipAddress.indexOf(host) != -1 || url.substring(0, 6) === "https:") {',
-            'return "DIRECT;";',
-          '}',
-          'return "PROXY ' + localAddress +':9000; DIRECT;";',
-        '}'
-      ].join('\n\r');
-      res.writeHeader(200, {
-        "Content-Type": "application/octet-stream"
-      });
-      res.end(pac);
-      return ;
-    }
-    next();
-  };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -912,165 +953,11 @@ process.exit(0);
 
 
 
-    <h2>
-        <a href="#apidoc.element.clam.server" id="apidoc.element.clam.server">
-        function <span class="apidocSignatureSpan">clam.</span>server
-        <span class="apidocSignatureSpan">(needInject, basePath, port, sport)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">server = function (needInject, basePath, port, sport) {
-  var config_dir = ".clam";
-  ["buildhistory", "mock", "gconfig"].forEach(function (i) {
-    var file = path.join(process.cwd(), config_dir, i+".json");
-    if (fs.existsSync(file)) {
-      fs.unlink(file);
-    }
-  });
 
-  var absConfDir = path.join(process.cwd(), config_dir);
-  if (!fs.existsSync(absConfDir)) {
-    fs.mkdirSync(absConfDir);
-  }
 
-  var gitignore = path.join(process.cwd(), ".gitignore");
-  var ig = fs.existsSync(gitignore) ? fs.readFileSync(gitignore) : null;
-  if (!ig || !/\.cache/.test(ig)) {
-    fs.appendFile(gitignore, "\n.cache/\n", function () {
-      fs.chmod(gitignore, 0777);
-    });
-  }
-  if (!ig || !/node_modules/.test(ig)) {
-    fs.appendFile(gitignore, "\nnode_modules/\n", function () {
-      fs.chmod(gitignore, 0777);
-    });
-  }
 
-  var prjInfo = project();
 
-  var ports = [80, 443];
-  if (typeof prjInfo.port == "number" || typeof prjInfo.port == "string") {
-    ports[0] = parseInt(prjInfo.port);
-  }
-  else if (util.isArray(prjInfo.port)) {
-    ports = prjInfo.port;
-  }
 
-  var hostsInfo = prjInfo.hosts;
-  if (typeof hostsInfo != "undefined") {
-    hostsInfo += '\n127.0.0.1 ' + HOST_NAME;
-    var hostsArr = hostsInfo.split(/[\n\r]{1,}/g);
-    var hostsObj = {};
-    var tmp;
-    for (var i = 0; i &lt; hostsArr.length; i++) {
-      tmp = hostsArr[i].split(/\s{1,}/g);
-      if (tmp.length &gt;= 2) {
-        if (!hostsObj[tmp[0]]) {
-          hostsObj[tmp[0]] = [];
-        }
-        for (var j = 1; j &lt; tmp.length; j++) {
-          hostsObj[tmp[0]].push(tmp[j]);
-        }
-      }
-    }
-    var fhConfFile = path.join(absConfDir, "flex-hosts.json");
-    if (!fs.existsSync(fhConfFile)) {
-      fs.writeFileSync(fhConfFile, JSON.stringify(hostsObj, null, 2));
-      fs.chmod(fhConfFile, 0777);
-    }
-  }
-
-  var essiConf = essi.config;
-  var essiFlag = false;
-  var cdnPath = prjInfo.cdnPath;
-  if (cdnPath) {
-    essiConf.cdnPath = cdnPath;
-    essiFlag = true;
-  }
-  var essiCharset = prjInfo.charset;
-  if (essiCharset &amp;&amp; essiCharset[0]) {
-    essiConf.charset = essiCharset[0];
-    essiFlag = true;
-  }
-
-  var essiConfFile = path.join(absConfDir, "essi.json");
-  if (essiFlag &amp;&amp; !fs.existsSync(essiConfFile)) {
-    fs.writeFileSync(essiConfFile, JSON.stringify(essiConf, null, 2));
-    fs.chmod(essiConfFile, 0777);
-  }
-
-  var fcConf = flexCombo.config;
-  var fcFlag = false;
-  var fcCharset = prjInfo.charset;
-  if (fcCharset &amp;&amp; fcCharset[1]) {
-    fcConf.charset = essiCharset[1];
-    fcFlag = true;
-  }
-  var fcUrls = prjInfo.urls;
-  if (fcUrls) {
-    fcConf.urls = fcUrls;
-    fcFlag = true;
-  }
-  var fcdefine = prjInfo.define;
-  if (fcdefine) {
-    if (!fcConf['dac/tpl']) {
-      fcConf['dac/tpl'] = {filter:{}};
-    }
-    fcConf['dac/tpl'].define = fcdefine;
-    fcFlag = true;
-  }
-  var fcanonymous = prjInfo.anonymous;
-  if (fcanonymous) {
-    if (!fcConf['dac/tpl']) {
-      fcConf['dac/tpl'] = {filter:{}};
-    }
-    fcConf['dac/tpl'].anonymous = fcanonymous;
-    fcFlag = true;
-  }
-  var fcConfFile = path.join(absConfDir, "flex-combo.json");
-  if (fcFlag &amp;&amp; !fs.existsSync(fcConfFile)) {
-    fs.writeFileSync(fcConfFile, JSON.stringify(fcConf, null, 2));
-    fs.chmod(fcConfFile, 0777);
-  }
-
-  var plugBase = require("plug-base");
-  plugBase.root(basePath ? basePath : "src");
-  plugBase.config(config_dir);
-  plugBase
-    .use(doji.PACHandle())
-    .use(inspector)
-    .use(dataApiHandle())
-    .use(jsonHandle.json(prjInfo))
-    .plug(require("flex-combo"), {filter:{
-      '\\/\\$CLAM_VER\\$': ''
-    }})
-    .plug(require("essi"))
-    .listen(port || ports[0] || 80, sport || ports[1] || 443);
-
-  var clamApp = plugBase.app;
-  var clamServer = plugBase.http;
-  var proxyInfo = _.extend({
-    port: 9000,
-    dojiDir: '',
-    urls: {},
-    hosts: {},
-    filters: {},
-    parsers: [],
-    timestamp: false,
-    widgets: {}
-  }, prjInfo.proxy);
-
-  if (needInject) {
-    proxyInfo.parsers.unshift(function (buffer, proxyRes, req) {
-      debug('Now inject the inspector for mobile');
-      return inspector.inject(buffer, req.serverIP);
-    });
-    inspector.connect(clamServer);
-  }
-
-  var pr ...</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
 
 
 
@@ -1205,7 +1092,23 @@ process.exit(0);
     //debug('å¤„ç†åŽå†…å®¹%s', pageContent);
     return pageContent;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       pageContent = isUtf8(pageContent) ? pageContent.toString() : iconv.decode(pageContent, 'gbk');
+   }
+
+   //èŽ·å–å½“å‰é¡µé¢åˆ°æºä»£ç&nbsp;æ&nbsp;¹ç›®å½•çš„ç›¸å¯¹è·¯å¾„
+   var srcRoot = path.join(config.root(), 'src');
+   var urlDir = path.relative(srcRoot, path.dirname(page));
+   debug('å¼•ç”¨æ–‡ä»¶ç›¸å¯¹è·¯å¾„:%s', urlDir);
+   pageContent = assetUrl.<span class="apidocCodeKeywordSpan">toAbsolutePath</span>(pageContent, urlDir);
+   return pageContent;
+}
+
+/**
+* æ··åˆæ¨¡å—å®šä¹‰å’Œå†…å®¹
+* æ&nbsp;¹æ®modefsä¸­å®šä¹‰çš„åç§»é‡ï¼Œæ›¿æ¢å†…å®¹ä¿¡æ¯ï¼Œé‡ç»„content
+* @param modDefs
+...</pre></li>
     </ul>
 
 
@@ -1225,7 +1128,22 @@ process.exit(0);
     <li>description and source-code<pre class="apidocCodePre">clearCacheMod = function () {
     hasLoadMod = {};   // é¡µé¢åˆ·æ–°æ—¶éœ€è¦æ¸…æ¥šè®°å½•çš„æ¨¡å—
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @returns content
+ */
+function recoverAssetsTool(content,map){
+// å¯¹mapæŽ’åºï¼Œå°†injectStyleå’ŒinjectStyleæŽ’åˆ°æœ€åŽæ‰§è¡Œ
+var requireMap = [];
+var placeholderMap = [];
+
+assetsTool.<span class="apidocCodeKeywordSpan">clearCacheMod</span>();
+
+map.forEach(function(i) {
+    /\$assetsTool.inject(Script|Style).*/g.test(i.express) ?
+        placeholderMap.push(i):
+        requireMap.push(i);
+});
+...</pre></li>
     </ul>
 
 
@@ -1258,40 +1176,145 @@ process.exit(0);
     var fn = new Function('$assetsTool', cmd);
     return fn(new AssetsTool());
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+map.forEach(function(i) {
+    /\$assetsTool.inject(Script|Style).*/g.test(i.express) ?
+        placeholderMap.push(i):
+        requireMap.push(i);
+});
+
+map = requireMap.concat(placeholderMap);
+var assetsResult = assetsTool.<span class="apidocCodeKeywordSpan">feLoader</span>(map);
+
+function getAssets(id){
+    var ret = '';
+    assetsResult.forEach(function(i){
+        if(i.id == id){
+            ret = i.express;
+            return;
+...</pre></li>
     </ul>
 
 
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.clam.build" id="apidoc.module.clam.build">module clam.build</a></h1>
+<h1><a href="#apidoc.module.clam.beautify" id="apidoc.module.clam.beautify">module clam.beautify</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.clam.build.build" id="apidoc.element.clam.build.build">
-        function <span class="apidocSignatureSpan">clam.</span>build
-        <span class="apidocSignatureSpan">(timestamp)</span>
+        <a href="#apidoc.element.clam.beautify.js_beautify" id="apidoc.element.clam.beautify.js_beautify">
+        function <span class="apidocSignatureSpan">clam.beautify.</span>js_beautify
+        <span class="apidocSignatureSpan">(js_source_text, options)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">build = function (timestamp){
-    var build = require('./lib/build.js');
-    build.build('server', timestamp);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
+    <li>description and source-code<pre class="apidocCodePre">function js_beautify(js_source_text, options) {
+
+    var input, output, token_text, last_type, last_text, last_last_text, last_word, flags, flag_store, indent_string;
+    var whitespace, wordchar, punct, parser_pos, line_starters, digits;
+    var prefix, token_type, do_block_just_closed;
+    var wanted_newline, just_added_newline, n_newlines;
+    var preindent_string = '';
+
+
+    // Some interpreters have unexpected results with foo = baz || bar;
+    options = options ? options : {};
+
+    var opt_brace_style;
+
+    // compatibility
+    if (options.space_after_anon_function !== undefined &amp;&amp; options.jslint_happy === undefined) {
+        options.jslint_happy = options.space_after_anon_function;
+    }
+    if (options.braces_on_own_line !== undefined) { //graceful handling of deprecated option
+        opt_brace_style = options.braces_on_own_line ? "expand" : "collapse";
+    }
+    opt_brace_style = options.brace_style ? options.brace_style : (opt_brace_style ? opt_brace_style : "collapse");
+
+
+    var opt_indent_size = options.indent_size ? options.indent_size : 4,
+        opt_indent_char = options.indent_char ? options.indent_char : ' ',
+        opt_preserve_newlines = typeof options.preserve_newlines === 'undefined' ? true : options.preserve_newlines,
+        opt_break_chained_methods = typeof options.break_chained_methods === 'undefined' ? false : options.break_chained_methods
+,
+        opt_max_preserve_newlines = typeof options.max_preserve_newlines === 'undefined' ? false : options.max_preserve_newlines
+,
+        opt_jslint_happy = options.jslint_happy === 'undefined' ? false : options.jslint_happy,
+        opt_keep_array_indentation = typeof options.keep_array_indentation === 'undefined' ? false : options.keep_array_indentation
+,
+        opt_space_before_conditional = typeof options.space_before_conditional === 'undefined' ? true : options.space_before_conditional
+,
+        opt_unescape_strings = typeof options.unescape_strings === 'undefined' ? false : options.unescape_strings;
+
+    just_added_newline = false;
+
+    // cache the source's length.
+    var input_length = js_source_text.length;
+
+    function trim_output(eat_newlines) {
+        eat_newlines = typeof eat_newlines === 'undefined' ? false : eat_newlines;
+        while (output.length &amp;&amp; (output[output.length - 1] === ' '
+            || output[output.length - 1] === indent_string
+            || output[output.length - 1] === preindent_string
+            || (eat_newlines &amp;&amp; (output[output.length - 1] === '\n' || output[output.length - 1] === '\r')))) {
+            output.pop();
+        }
+    }
+
+    function trim(s) {
+        return s.replace(/^\s\s*|\s\s*$/, '');
+    }
+
+    // we could use just string.split, but
+    // IE doesn't like returning empty strings
+    function split_newlines(s) {
+        //return s.split(/\x0d\x0a|\x0a/);
+
+        s = s.replace(/\x0d/g, '');
+        var out = [],
+            idx = s.indexOf("\n");
+        while (idx !== -1) {
+            out.push(s.substring(0, idx));
+            s = s.substring(idx + 1);
+            idx = s.indexOf("\n");
+        }
+        if (s.length) {
+            out.push(s);
+        }
+        return out;
+    }
+
+    function force_newline() {
+        var old_keep_array_indentation = opt_keep_array_indentation;
+        opt_keep_array_indentation = false;
+        print_newline();
+        opt_keep_array_indentation = old_keep_array_indentation;
+    }
+
+    function print_newline(ignore_repeated, reset_statement_flags) {
+
+        flags.eat_next_space = false;
+        if (opt_keep_array_indentation &amp;&amp; is_array(flags.mode)) {
             return;
         }
-        var startServer = require('./lib/server.js');
-        startServer(false);
-    },
-    build: function(timestamp){
-        var build = require('./lib/build.js');
-        build.<span class="apidocCodeKeywordSpan">build</span>('server', timestamp);
-    }
-}
-// clam.on();
-...</pre></li>
+
+        ignore_repeated = typeof ignore_repeated === 'undefined' ? true : ignore_repeated;
+        reset_statement_flags = typeof reset_statement_flags === 'undefined' ? true : reset_statement_flags;
+
+        if (reset_statement_flags) {
+            flags.if_line = false;
+            flags.chain_extra_indentation = 0;
+        }
+
+        trim_output();
+
+        if (!output.length) {
+            return; // no newline on start of file
+        }
+
+        if (output[output.length ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1446,23 +1469,21 @@ process.exit(0);
     return PRJROOT;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-// ["socket://www.taobao.com:80/a/d/b?a=1&amp;b=2", "socket", "www.taobao.com", "80", &amp;#
-x22;/a/d/b", "a=1&amp;b=2"]
-// 'socket://www.taobao.com:80/a/d/b?a=1&amp;b=2'.match(/^(?:(http(?:s*)|socket):\/\/)*([^\:\/]+)*(?:\:(\d+))*(\/[^?]*)(?:\?(.*))*$/)
-exports._reFullURI = /^(?:(http(?:s*)|socket):\/\/)*([^\:\/]+)*(?:\:(\d+))*(\/[^?]*)(?:\?(.*))*$/;
+    }
+    else {
+        pageContent = fs.readFileSync(page);
+        pageContent = isUtf8(pageContent) ? pageContent.toString() : iconv.decode(pageContent, 'gbk');
+    }
 
-if (prjInfo &amp;&amp; prjInfo.dataApi) {
-_.each(prjInfo.dataApi, function (options) {
-  // æŽ¥å£æ–‡ä»¶æ”¾åˆ°
-  var local = path.join(config.<span class="apidocCodeKeywordSpan">root</span>(), '/.clam/dataApi/', options.local || &amp;#
-x27;');
-  var remote = (options.remote || '').match(exports._reFullURI);
-  var type = options.type || 'auto';
-  var pathname = options.url;
-  if (!pathname || !remote) {
-    debug('Failed to build remote %s from %s !', remote, local);
-  }
-  exports.remotes.push({
+    //èŽ·å–å½“å‰é¡µé¢åˆ°æºä»£ç&nbsp;æ&nbsp;¹ç›®å½•çš„ç›¸å¯¹è·¯å¾„
+    var srcRoot = path.join(config.<span class="apidocCodeKeywordSpan">root</span>(), 'src');
+    var urlDir = path.relative(srcRoot, path.dirname(page));
+    debug('å¼•ç”¨æ–‡ä»¶ç›¸å¯¹è·¯å¾„:%s', urlDir);
+    pageContent = assetUrl.toAbsolutePath(pageContent, urlDir);
+    return pageContent;
+}
+
+/**
 ...</pre></li>
     </ul>
 
@@ -1970,49 +1991,6 @@ config.set('project', oldPrj);
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.clam.init" id="apidoc.module.clam.init">module clam.init</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.clam.init.init" id="apidoc.element.clam.init.init">
-        function <span class="apidocSignatureSpan">clam.</span>init
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">init = function (){
-    config.init();
-    template.init();
-    var ret = project({});
-
-    ret.data.forEach(function (ac) {
-        debug(ac.action, ac.content);
-    });
-    process.exit(0);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-var template = require('./lib/template.js');
-var mod = require('./lib/mod.js');
-var page = require('./lib/page.js');
-var widget = require('./lib/widget.js');
-
-var clam = module.exports = {
-    init: function(){
-config.<span class="apidocCodeKeywordSpan">init</span>();
-template.init();
-var ret = project({});
-
-ret.data.forEach(function (ac) {
-    debug(ac.action, ac.content);
-});
-process.exit(0);
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.clam.jsonHandle" id="apidoc.module.clam.jsonHandle">module clam.jsonHandle</a></h1>
 
 
@@ -2103,6 +2081,119 @@ var clamApp = plugBase.app;
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.map" id="apidoc.module.clam.map">module clam.map</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.map.map" id="apidoc.element.clam.map.map">
+        function <span class="apidocSignatureSpan">clam.</span>map
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Map() {
+    if (!this instanceof Map) {
+        return new Map();
+    }
+    this._cache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return;
+}
+//è¿”å›žæ•°ç»„ï¼Œè¡¨ç¤ºæ˜¯ç›®å½•ï¼Œéœ€è¦æ˜¾ç¤ºç›®å½•ã€‚
+if(util.isArray(realPageRelativePath)){
+    var files = realPageRelativePath.sort();
+    debug('files', util.inspect(files));
+    var tplPath = path.join(__dirname, conf.templateDir, conf.template);
+    _.<span class="apidocCodeKeywordSpan">map</span>(files, function(file){
+        file.path = path.join(url, file.name);
+        return file;
+    })
+    // this is using juicer engine only
+    var pageContent = J(fs.readFileSync(tplPath).toString(), {folder : url, back: join(url, '..').replace(/\\/g, '
+;/'), folderInfo:files});
+    // this is using an include render and juicer
+    // var pageContent = J(compile.render(tplPath, [modsDir], prjInfo.cdnPath), {folderInfo: files});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.map.prototype" id="apidoc.module.clam.map.prototype">module clam.map.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.map.prototype.get" id="apidoc.element.clam.map.prototype.get">
+        function <span class="apidocSignatureSpan">clam.map.prototype.</span>get
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (key) {
+    return this._cache[key] || [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    ret.data.forEach(function (ac) {
+        debug(ac.action, ac.content);
+    });
+    process.exit(0);
+},
+on: function(){
+    var prjInfo = config.<span class="apidocCodeKeywordSpan">get</span>('project');
+    if (!prjInfo) {
+        console.log('Execute "clam init".');
+        return;
+    }
+    var startServer = require('./lib/server.js');
+    startServer(false);
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.map.prototype.put" id="apidoc.element.clam.map.prototype.put">
+        function <span class="apidocSignatureSpan">clam.map.prototype.</span>put
+        <span class="apidocSignatureSpan">(key, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (key, value) {
+    (!this._cache[key]) &amp;&amp; (this._cache[key] = []);
+
+    if (value instanceof Array) {
+        this._cache[key] = this._cache[key].concat(value);
+    } else {
+        this._cache[key].push(value); // ä¸åšä¿¡æ¯åŽ»é‡
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var type = getType(m);
+
+    var mods = parser.getMods(m);
+
+    // é»˜è®¤cssæ”¾åˆ°å¤´éƒ¨ï¼Œjsæ”¾åˆ°åº•éƒ¨
+    if (!pos) var pos = (type == CSS) ? HEAD : FOOT;
+
+    self.map.<span class="apidocCodeKeywordSpan">put</span>(type + SEP + (pos || HEAD), mods);
+});
+};
+AssetsTool.prototype.injectStyle = function () {
+return this._inject(CSS, HEAD);
+};
+AssetsTool.prototype.injectScript = function (pos) {
+return this._inject(JS, pos);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.clam.mocker" id="apidoc.module.clam.mocker">module clam.mocker</a></h1>
 
 
@@ -2146,7 +2237,23 @@ var clamApp = plugBase.app;
     debug('é¡µé¢æœ€ç»ˆå†…å®¹%s',url, util.inspect(param));
     return param;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            param[attrFixed] = pageParam[attr];
+            continue;
+        }
+        param[attr] = pageParam[attr];
+    }
+}
+debug('getMixedMockDate2%s', util.inspect(param));
+param = mocker.<span class="apidocCodeKeywordSpan">getMixedMockDate</span>(param, url, (!!rootContent));
+debug('çœŸå®žè¿ä½œçš„å‚æ•°%s', util.inspect(param));
+
+try {
+    pageContent = J(pageContent, param);
+}
+catch (e) {
+    debug('Juicerå‡ºé”™%s\n å¯¹è±¡:%s', pageContent, util.inspect(param));
+...</pre></li>
     </ul>
 
 
@@ -2243,7 +2350,23 @@ var clamApp = plugBase.app;
         data: actions
     };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+
+program
+.command('mod &lt;modname&gt; [template]')
+.description(helpInfo['mod'][lang])
+.action(function (modname, template) {
+  debug('exec mod "%s" "%s"', modname, template);
+  mod.<span class="apidocCodeKeywordSpan">add</span>(modname, '', template);
+  process.exit(0);
+});
+
+program
+.command('page &lt;pagename&gt; [template]')
+.description(helpInfo['page'][lang])
+.action(function (pagename, template) {
+...</pre></li>
     </ul>
 
 
@@ -2378,87 +2501,6 @@ var clamApp = plugBase.app;
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.clam.on" id="apidoc.module.clam.on">module clam.on</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.clam.on.on" id="apidoc.element.clam.on.on">
-        function <span class="apidocSignatureSpan">clam.</span>on
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">on = function (){
-    var prjInfo = config.get('project');
-    if (!prjInfo) {
-        console.log('Execute "clam init".');
-        return;
-    }
-    var startServer = require('./lib/server.js');
-    startServer(false);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        startServer(false);
-    },
-    build: function(timestamp){
-        var build = require('./lib/build.js');
-        build.build('server', timestamp);
-    }
-}
-// clam.<span class="apidocCodeKeywordSpan">on</span>();
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.clam.pacHandle" id="apidoc.module.clam.pacHandle">module clam.pacHandle</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.clam.pacHandle.pacHandle" id="apidoc.element.clam.pacHandle.pacHandle">
-        function <span class="apidocSignatureSpan">clam.</span>pacHandle
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">pacHandle = function () {
-  return function (req, res, next) {
-    var urlInfo = url.parse(req.url, true);
-    var extname = path.extname(urlInfo.pathname);
-    if (extname === '.pac') {
-      var ipAddress = JSON.stringify(exports.localAddresses);
-      var localAddress = req.connection.localAddress.split(':').pop();
-      var pac = [
-        'var ipAddress = ' + ipAddress + ';',
-        'function FindProxyForURL (url, host) {',
-          'var host = host.split(":")[0].toLowerCase();',
-          'var url = url.toLowerCase();',
-          'if (ipAddress.indexOf(host) != -1 || url.substring(0, 6) === "https:") {',
-            'return "DIRECT;";',
-          '}',
-          'return "PROXY ' + localAddress +':9000; DIRECT;";',
-        '}'
-      ].join('\n\r');
-      res.writeHeader(200, {
-        "Content-Type": "application/octet-stream"
-      });
-      res.end(pac);
-      return ;
-    }
-    next();
-  };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-
-</div>
-
-<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.clam.page" id="apidoc.module.clam.page">module clam.page</a></h1>
 
 
@@ -2553,7 +2595,23 @@ var clamApp = plugBase.app;
         data: actions
     };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+
+program
+.command('mod &lt;modname&gt; [template]')
+.description(helpInfo['mod'][lang])
+.action(function (modname, template) {
+  debug('exec mod "%s" "%s"', modname, template);
+  mod.<span class="apidocCodeKeywordSpan">add</span>(modname, '', template);
+  process.exit(0);
+});
+
+program
+.command('page &lt;pagename&gt; [template]')
+.description(helpInfo['page'][lang])
+.action(function (pagename, template) {
+...</pre></li>
     </ul>
 
 
@@ -2837,7 +2895,23 @@ var clamApp = plugBase.app;
         return;
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        if(!realPageRelativePath || realPageRelativePath === '') {
+if (!prjInfo.hostsMap || !prjInfo.hostsMap[req.headers.host]) {
+    res.writeHead(404, { 'Content-Type': 'text/html;charset=utf-8'});
+    res.end('404 Error, File not found.');
+    return;
+}
+
+proxy.<span class="apidocCodeKeywordSpan">fetch</span>(
+    req.url,
+    prjInfo.hostsMap ? prjInfo.hostsMap[req.headers.host] : '',
+    function(content, code) {
+        if (code == 200) {
+            res.end(isUtf8(content) ? content.toString() : iconv.decode(content, 'gbk'));
+        }
+        else {
+...</pre></li>
     </ul>
 
 
@@ -2903,166 +2977,31 @@ var clamApp = plugBase.app;
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.clam.server" id="apidoc.module.clam.server">module clam.server</a></h1>
+<h1><a href="#apidoc.module.clam.ssi" id="apidoc.module.clam.ssi">module clam.ssi</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.clam.server.server" id="apidoc.element.clam.server.server">
-        function <span class="apidocSignatureSpan">clam.</span>server
-        <span class="apidocSignatureSpan">(needInject, basePath, port, sport)</span>
+        <a href="#apidoc.element.clam.ssi.getHtml" id="apidoc.element.clam.ssi.getHtml">
+        function <span class="apidocSignatureSpan">clam.ssi.</span>getHtml
+        <span class="apidocSignatureSpan">(res, fullpath)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">server = function (needInject, basePath, port, sport) {
-  var config_dir = ".clam";
-  ["buildhistory", "mock", "gconfig"].forEach(function (i) {
-    var file = path.join(process.cwd(), config_dir, i+".json");
-    if (fs.existsSync(file)) {
-      fs.unlink(file);
-    }
-  });
+    <li>description and source-code<pre class="apidocCodePre">getHtml = function (res, fullpath) {
+    var str = fs.readFileSync(fullpath).toString();
+    var regInclude = /&lt;!--#include ".+"--&gt;/gi, regPath = /&lt;!--#include "(.+)"--&gt;/i;
+    var matchArr = str.match(regInclude);
 
-  var absConfDir = path.join(process.cwd(), config_dir);
-  if (!fs.existsSync(absConfDir)) {
-    fs.mkdirSync(absConfDir);
-  }
-
-  var gitignore = path.join(process.cwd(), ".gitignore");
-  var ig = fs.existsSync(gitignore) ? fs.readFileSync(gitignore) : null;
-  if (!ig || !/\.cache/.test(ig)) {
-    fs.appendFile(gitignore, "\n.cache/\n", function () {
-      fs.chmod(gitignore, 0777);
-    });
-  }
-  if (!ig || !/node_modules/.test(ig)) {
-    fs.appendFile(gitignore, "\nnode_modules/\n", function () {
-      fs.chmod(gitignore, 0777);
-    });
-  }
-
-  var prjInfo = project();
-
-  var ports = [80, 443];
-  if (typeof prjInfo.port == "number" || typeof prjInfo.port == "string") {
-    ports[0] = parseInt(prjInfo.port);
-  }
-  else if (util.isArray(prjInfo.port)) {
-    ports = prjInfo.port;
-  }
-
-  var hostsInfo = prjInfo.hosts;
-  if (typeof hostsInfo != "undefined") {
-    hostsInfo += '\n127.0.0.1 ' + HOST_NAME;
-    var hostsArr = hostsInfo.split(/[\n\r]{1,}/g);
-    var hostsObj = {};
-    var tmp;
-    for (var i = 0; i &lt; hostsArr.length; i++) {
-      tmp = hostsArr[i].split(/\s{1,}/g);
-      if (tmp.length &gt;= 2) {
-        if (!hostsObj[tmp[0]]) {
-          hostsObj[tmp[0]] = [];
+    if (matchArr) {
+        for (var i = 0; i &lt; matchArr.length; i++) {
+            var realpath = path.join(path.dirname(fullpath),matchArr[i].match(regPath)[1]);
+            var getHtml = fs.readFileSync(realpath).toString();
+            str = str.replace(matchArr[i],getHtml);
         }
-        for (var j = 1; j &lt; tmp.length; j++) {
-          hostsObj[tmp[0]].push(tmp[j]);
-        }
-      }
     }
-    var fhConfFile = path.join(absConfDir, "flex-hosts.json");
-    if (!fs.existsSync(fhConfFile)) {
-      fs.writeFileSync(fhConfFile, JSON.stringify(hostsObj, null, 2));
-      fs.chmod(fhConfFile, 0777);
-    }
-  }
+    return str;
 
-  var essiConf = essi.config;
-  var essiFlag = false;
-  var cdnPath = prjInfo.cdnPath;
-  if (cdnPath) {
-    essiConf.cdnPath = cdnPath;
-    essiFlag = true;
-  }
-  var essiCharset = prjInfo.charset;
-  if (essiCharset &amp;&amp; essiCharset[0]) {
-    essiConf.charset = essiCharset[0];
-    essiFlag = true;
-  }
-
-  var essiConfFile = path.join(absConfDir, "essi.json");
-  if (essiFlag &amp;&amp; !fs.existsSync(essiConfFile)) {
-    fs.writeFileSync(essiConfFile, JSON.stringify(essiConf, null, 2));
-    fs.chmod(essiConfFile, 0777);
-  }
-
-  var fcConf = flexCombo.config;
-  var fcFlag = false;
-  var fcCharset = prjInfo.charset;
-  if (fcCharset &amp;&amp; fcCharset[1]) {
-    fcConf.charset = essiCharset[1];
-    fcFlag = true;
-  }
-  var fcUrls = prjInfo.urls;
-  if (fcUrls) {
-    fcConf.urls = fcUrls;
-    fcFlag = true;
-  }
-  var fcdefine = prjInfo.define;
-  if (fcdefine) {
-    if (!fcConf['dac/tpl']) {
-      fcConf['dac/tpl'] = {filter:{}};
-    }
-    fcConf['dac/tpl'].define = fcdefine;
-    fcFlag = true;
-  }
-  var fcanonymous = prjInfo.anonymous;
-  if (fcanonymous) {
-    if (!fcConf['dac/tpl']) {
-      fcConf['dac/tpl'] = {filter:{}};
-    }
-    fcConf['dac/tpl'].anonymous = fcanonymous;
-    fcFlag = true;
-  }
-  var fcConfFile = path.join(absConfDir, "flex-combo.json");
-  if (fcFlag &amp;&amp; !fs.existsSync(fcConfFile)) {
-    fs.writeFileSync(fcConfFile, JSON.stringify(fcConf, null, 2));
-    fs.chmod(fcConfFile, 0777);
-  }
-
-  var plugBase = require("plug-base");
-  plugBase.root(basePath ? basePath : "src");
-  plugBase.config(config_dir);
-  plugBase
-    .use(doji.PACHandle())
-    .use(inspector)
-    .use(dataApiHandle())
-    .use(jsonHandle.json(prjInfo))
-    .plug(require("flex-combo"), {filter:{
-      '\\/\\$CLAM_VER\\$': ''
-    }})
-    .plug(require("essi"))
-    .listen(port || ports[0] || 80, sport || ports[1] || 443);
-
-  var clamApp = plugBase.app;
-  var clamServer = plugBase.http;
-  var proxyInfo = _.extend({
-    port: 9000,
-    dojiDir: '',
-    urls: {},
-    hosts: {},
-    filters: {},
-    parsers: [],
-    timestamp: false,
-    widgets: {}
-  }, prjInfo.proxy);
-
-  if (needInject) {
-    proxyInfo.parsers.unshift(function (buffer, proxyRes, req) {
-      debug('Now inject the inspector for mobile');
-      return inspector.inject(buffer, req.serverIP);
-    });
-    inspector.connect(clamServer);
-  }
-
-  var pr ...</pre></li>
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -3179,6 +3118,183 @@ process.exit(0);
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.clam.walk" id="apidoc.module.clam.walk">module clam.walk</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.clam.walk.walk" id="apidoc.element.clam.walk.walk">
+        function <span class="apidocSignatureSpan">clam.</span>walk
+        <span class="apidocSignatureSpan">(dir, done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">walk = function (dir, done) {
+    var results = [];
+    fs.readdir(dir, function(err, list) {
+        if (err) return done(err);
+        var pending = list.length;
+        if (!pending) return done(null, results);
+        list.forEach(function(file) {
+            file = dir + '/' + file;
+            fs.stat(file, function(err, stat) {
+                if (stat &amp;&amp; stat.isDirectory()) {
+                    walk(file, function(err, res) {
+                        results = results.concat(res);
+                        if (!--pending) done(null, results);
+                    });
+                } else {
+                    results.push(file);
+                    if (!--pending) done(null, results);
+                }
+            });
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.walk.rmrf" id="apidoc.element.clam.walk.rmrf">
+        function <span class="apidocSignatureSpan">clam.walk.</span>rmrf
+        <span class="apidocSignatureSpan">(dir, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rmrf(dir, callback) {
+    fs.stat(dir, function(err, stats) {
+        if (err) {
+            return callback(err);
+        }
+
+        if (!stats.isDirectory()) {
+            return fs.unlink(dir, callback);
+        }
+
+        var count = 0;
+        fs.readdir(dir, function(err, files) {
+            if (err) {
+                return callback(err);
+            }
+
+            if (files.length &lt; 1) {
+                return fs.rmdir(dir, callback);
+            }
+
+            files.forEach(function(file) {
+                var sub = path.join(dir, file);
+
+                rmrf(sub, function(err) {
+                    if (err) {
+                        return callback(err);
+                    }
+
+                    if (++count == files.length) {
+                        fs.rmdir(dir, callback);
+                    }
+                });
+            });
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.walk.rmrfSync" id="apidoc.element.clam.walk.rmrfSync">
+        function <span class="apidocSignatureSpan">clam.walk.</span>rmrfSync
+        <span class="apidocSignatureSpan">(dir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rmrfSync(dir) {
+    var stats = fs.statSync(dir);
+    if (!stats.isDirectory()) {
+        return fs.unlinkSync(dir);
+    }
+    var count = 0;
+    var files = fs.readdirSync(dir);
+    if (files.length &lt; 1) {
+        return fs.rmdirSync(dir);
+    }
+
+    files.forEach(function(file) {
+        var sub = path.join(dir, file);
+
+        rmrfSync(sub);
+        if (++count == files.length) {
+            fs.rmdirSync(dir);
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var list = fs.readdirSync(modDir);
+list = _.filter(list,function(file){
+    return _.any(config.suffix, function(value) {
+        return file.lastIndexOf(value) !== -1;
+    });
+});
+if(list.length==0){
+    walk.<span class="apidocCodeKeywordSpan">rmrfSync</span>(modDir);
+    actions.push({action:'åˆ&nbsp;é™¤æ–‡ä»¶ç›®å½•', content: modDir});
+}
+return {succeed:true,
+    msg:'åˆ&nbsp;é™¤é¡µé¢',
+    data:actions
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.clam.walk.walkSync" id="apidoc.element.clam.walk.walkSync">
+        function <span class="apidocSignatureSpan">clam.walk.</span>walkSync
+        <span class="apidocSignatureSpan">(dir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">walkSync = function (dir){
+    var results = [];
+    var list = fs.readdirSync(dir);
+
+    list.forEach(function(file) {
+        file = (dir + '/' + file).replace(/\\/g, '/');
+        var stat = fs.statSync(file);
+            if (stat &amp;&amp; stat.isDirectory()) {
+                results = results.concat(walkSync(file));
+            } else {
+                results.push(file);
+            }
+    });
+    return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function initFromIF(){
+var root = config.root();
+var dataPath = path.join(root,'.clam/data');
+if(!fs.existsSync(dataPath)){
+    return;
+}
+var files = walker.<span class="apidocCodeKeywordSpan">walkSync</span>(dataPath);
+
+for(var i = 0; i &lt; files.length; i++){
+    var file = files[i];
+    if(path.extname(file) !== '.js'){
+        continue;
+    }
+    var ifData = require(file);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.clam.widget" id="apidoc.module.clam.widget">module clam.widget</a></h1>
 
 
@@ -3261,7 +3377,23 @@ process.exit(0);
         data: actions
     };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+
+program
+.command('mod &lt;modname&gt; [template]')
+.description(helpInfo['mod'][lang])
+.action(function (modname, template) {
+  debug('exec mod "%s" "%s"', modname, template);
+  mod.<span class="apidocCodeKeywordSpan">add</span>(modname, '', template);
+  process.exit(0);
+});
+
+program
+.command('page &lt;pagename&gt; [template]')
+.description(helpInfo['page'][lang])
+.action(function (pagename, template) {
+...</pre></li>
     </ul>
 
 
